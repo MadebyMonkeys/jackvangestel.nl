@@ -1,0 +1,67 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// Body
+// -----------------------------------------------------------------------------
+
+body {
+    background-color: #{$background-color};
+    color: #{$text-color};
+    font-family: var(--ff-base);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Headings
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+    --_foreground: var(--foreground, #{$heading-foreground});
+    --_heading-family: var(--heading-family, #{$heading-font-family});
+    --_heading-size: var(--heading-size, #{$heading-font-size});
+    --_heading-weight: var(--heading-weight, #{$heading-font-weight});
+    --_line-height: var(--line-height, #{$heading-line-height});
+
+    color: var(--_foreground);
+    font-family: var(--_heading-family);
+    font-size: var(--_heading-size);
+    font-weight: var(--_heading-weight);
+    line-height: var(--_line-height);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Anchor(s)
+// -----------------------------------------------------------------------------
+
+a:not([class]) {
+    --_text-decoration: var(--text-decoration, underline);
+    --_link-foreground: #{$link-color};
+    color: var(--_link-foreground);
+    text-decoration: var(--_text-decoration);
+
+    &:is(:hover, :focus, :active) {
+        --text-decoration: var(--text-decoration-hover, none);
+        --link-foreground: var(--link-foreground-hover, #{$link-color-hover});
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Inputs
+// -----------------------------------------------------------------------------
+
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    background: #{$input-background};
+    padding: #{$input-padding};
+    border: #{$input-border};
+    border-radius: #{$input-border-radius};
+}

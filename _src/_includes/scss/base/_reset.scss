@@ -1,0 +1,88 @@
+// -----------------------------------------------------------------------------
+// Global selector reset
+// -----------------------------------------------------------------------------
+
+* {
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    
+    &,
+    &::before,
+    &::after {
+        box-sizing: inherit;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// HTML reset
+// -----------------------------------------------------------------------------
+
+html {
+    box-sizing: border-box;
+    color-scheme: light dark;
+    hanging-punctuation: first last;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :has(:target) {
+        scroll-behavior: smooth;
+        scroll-padding-top: 3rem;
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Typography
+// -----------------------------------------------------------------------------
+
+:is(h1, h2, h3, h4) {
+    text-wrap: balance;
+}
+  
+p {
+    text-wrap: pretty;
+    max-inline-size: 75ch;
+}
+
+// -----------------------------------------------------------------------------
+// IMAGE RESET
+// -----------------------------------------------------------------------------
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+    vertical-align: middle;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 1rem;
+    vertical-align: middle;
+}
+
+
+// -----------------------------------------------------------------------------
+// INPUT RESET
+// -----------------------------------------------------------------------------
+
+select, textarea, input, button {
+    font: inherit;
+}

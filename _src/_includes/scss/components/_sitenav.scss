@@ -1,0 +1,84 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// LOGO
+// -----------------------------------------------------------------------------
+
+.site-header__logo {
+    color: #{$heading-foreground};
+    font-size: var(--fs-300);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: .0375rem;
+    flex: 1;
+    text-decoration: none;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Site-nav
+// -----------------------------------------------------------------------------
+
+.site-nav {
+    display: none;
+    width: 100%;
+    order: 3;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__link {
+        --text-decoration: none;
+        display: block;
+        padding: var(--size-xs) var(--size-s);
+        color: var(--_link-foreground);
+        text-decoration: var(--text-decoration);
+
+        &:is(:hover, :focus) {
+            --_link-foreground: #{$link-color-hover};
+        }
+    }
+}
+
+
+.site-nav__item > .button {
+    padding: var(--size-xs) var(--size-s);
+}
+
+
+
+.site-nav.open {
+    display: block;
+}
+
+
+
+//
+//
+//
+
+@include mq(md) {
+    .site-nav {
+        display: flex;
+
+        &,
+        &__item {
+            width: auto;
+        }
+
+        &__item {
+            text-align: start;
+        }
+    }
+}

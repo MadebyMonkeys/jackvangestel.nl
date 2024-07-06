@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+//
+//
+//
+
+.flex-group {
+    --_flex-group-col-gap: var(--flex-group-col-gap, #{$flex-group-gap});
+    --_flex-group-row-gap: var(--flex-group-row-gap, calc(#{$flex-group-gap} / 2));
+    --_flex-group-width: var(--flex-group-width, fit-content);
+
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--_flex-group-col-gap);
+}

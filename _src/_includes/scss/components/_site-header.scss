@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.site-header {
+    padding: var(--size-s) #{$page-padding}; 
+    
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
