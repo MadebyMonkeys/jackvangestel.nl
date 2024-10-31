@@ -1,0 +1,35 @@
+baseURL: "https://jackvangestel.nl/"
+languageCode: "en-us"
+title: Jack van Gestel
+logo: ""
+
+enableRobotTXT: true
+paginate: 10
+summarylength: 0
+enableEmoji: true
+
+# googleAnalytics: "G-XXXXXXXXXX"
+
+imaging:
+  anchor: "Center"
+
+markup:
+  goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+      attribute:
+        block: true
+        title: true
+
+params:
+  menus:
+    main:
+      - title: "Home"
+        url: "/"
+      - title: "Biography"
+        url: "/about"
+      - title: "Gallery"
+        url: "/gallery"
+      - title: Contact
+        button: true
+        url: "/contact"

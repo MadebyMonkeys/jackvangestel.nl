@@ -1,0 +1,24 @@
+{{ if .enabled }}
+<section class="[ hero ] [ full-width ] [ flow region ]">
+    <div class="grid ai-center" data-cols="two">
+        <div class="hero__content flow">
+            <span class="block__intro">{{.intro}}</span>
+            <h1 class="block__title">{{.title}}</h1>
+            <p>{{.description}}</p>
+        </div>
+        <div class="hero__image">
+            {{ with .image }}
+            <img src="{{ .url }}" alt="{{ .alt }}">
+            {{ end }}
+            <span>
+                <button class="button" href="https://www.youtube.com/watch?v={{.video_id}}" data-lightbox>
+                    <span class="visually-hidden">Play video</span>
+                    <ion-icon name="play" size="large"></ion-icon>
+                </button>
+            </span>
+        </div>
+    </div>
+
+    
+</section>
+{{ end }}

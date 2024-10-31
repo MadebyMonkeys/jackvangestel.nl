@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="[] [ full-width-split-screen ] []">
+    <div class="flow">
+        <h1 class="block__title">Biography</h1>
+        {{ .Content }}
+    </div>
+    <img src="{{.Params.image}}" alt="{{.Title}}">
+</article>
+{{ with .Site.Data.about.gallery }}
+    {{ partial "sections/gallery.html" . }}
+{{ end }}
+{{ end }}

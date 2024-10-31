@@ -1,0 +1,373 @@
+$-clr-grey-50: hsl(210, 20%, 98%);
+$-clr-grey-100: hsl(220, 14%, 96%);
+$-clr-grey-200: hsl(220, 13%, 91%);
+$-clr-grey-300: hsl(216, 12%, 84%);
+$-clr-grey-400: hsl(218, 11%, 65%);
+$-clr-grey-500: hsl(220, 9%, 46%);
+$-clr-grey-600: hsl(215, 14%, 34%);
+$-clr-grey-700: hsl(217, 19%, 27%);
+$-clr-grey-800: hsl(215, 28%, 17%);
+$-clr-grey-900: hsl(221, 39%, 11%);
+$-clr-grey-950: hsl(224, 71%, 4%);
+
+
+$-clr-slate-50: hsl(210, 40%, 98%);
+$-clr-slate-100: hsl(210, 40%, 96%);
+$-clr-slate-200: hsl(214, 32%, 91%);
+$-clr-slate-300: hsl(213, 27%, 84%);
+$-clr-slate-400: hsl(215, 20%, 65%);
+$-clr-slate-500: hsl(215, 16%, 47%);
+$-clr-slate-600: hsl(215, 19%, 35%);
+$-clr-slate-700: hsl(215, 25%, 27%);
+$-clr-slate-800: hsl(217, 33%, 17%);
+$-clr-slate-900: hsl(222, 47%, 11%);
+$-clr-slate-950: hsl(229, 84%, 5%);
+
+
+$-clr-zinc-50: hsl(0, 0%, 98%);
+$-clr-zinc-100: hsl(240, 5%, 96%);
+$-clr-zinc-200: hsl(240, 6%, 90%);
+$-clr-zinc-300: hsl(240, 5%, 84%);
+$-clr-zinc-400: hsl(240, 5%, 65%);
+$-clr-zinc-500: hsl(240, 4%, 46%);
+$-clr-zinc-600: hsl(240, 5%, 34%);
+$-clr-zinc-700: hsl(240, 5%, 26%);
+$-clr-zinc-800: hsl(240, 4%, 16%);
+$-clr-zinc-900: hsl(240, 6%, 10%);
+$-clr-zinc-950: hsl(240, 10%, 4%);
+
+
+$-clr-stone-50: hsl(60, 9%, 98%);
+$-clr-stone-100: hsl(60, 5%, 96%);
+$-clr-stone-200: hsl(20, 6%, 90%);
+$-clr-stone-300: hsl(24, 6%, 83%);
+$-clr-stone-400: hsl(24, 5%, 64%);
+$-clr-stone-500: hsl(25, 5%, 45%);
+$-clr-stone-600: hsl(33, 5%, 32%);
+$-clr-stone-700: hsl(30, 6%, 25%);
+$-clr-stone-800: hsl(12, 6%, 15%);
+$-clr-stone-900: hsl(24, 10%, 10%);
+$-clr-stone-950: hsl(20, 14%, 4%);
+
+
+$-clr-red-50: hsl(0, 86%, 97%);
+$-clr-red-100: hsl(0, 93%, 94%);
+$-clr-red-200: hsl(0, 96%, 89%);
+$-clr-red-300: hsl(0, 94%, 82%);
+$-clr-red-400: hsl(0, 91%, 71%);
+$-clr-red-500: hsl(0, 84%, 60%);
+$-clr-red-600: hsl(0, 72%, 51%);
+$-clr-red-700: hsl(0, 74%, 42%);
+$-clr-red-800: hsl(0, 70%, 35%);
+$-clr-red-900: hsl(0, 63%, 31%);
+$-clr-red-950: hsl(0, 75%, 15%);
+
+
+$-clr-orange-50: hsl(33, 100%, 96%);
+$-clr-orange-100: hsl(34, 100%, 92%);
+$-clr-orange-200: hsl(32, 98%, 83%);
+$-clr-orange-300: hsl(31, 97%, 72%);
+$-clr-orange-400: hsl(27, 96%, 61%);
+$-clr-orange-500: hsl(25, 95%, 53%);
+$-clr-orange-600: hsl(21, 90%, 48%);
+$-clr-orange-700: hsl(17, 88%, 40%);
+$-clr-orange-800: hsl(15, 79%, 34%);
+$-clr-orange-900: hsl(15, 75%, 28%);
+$-clr-orange-950: hsl(13, 81%, 15%);
+
+
+$-clr-amber-50: hsl(48, 100%, 96%);
+$-clr-amber-100: hsl(48, 96%, 89%);
+$-clr-amber-200: hsl(48, 97%, 77%);
+$-clr-amber-300: hsl(46, 97%, 65%);
+$-clr-amber-400: hsl(43, 96%, 56%);
+$-clr-amber-500: hsl(38, 92%, 50%);
+$-clr-amber-600: hsl(32, 95%, 44%);
+$-clr-amber-700: hsl(26, 90%, 37%);
+$-clr-amber-800: hsl(23, 83%, 31%);
+$-clr-amber-900: hsl(22, 78%, 26%);
+$-clr-amber-950: hsl(21, 92%, 14%);
+
+
+$-clr-yellow-50: hsl(55, 92%, 95%);
+$-clr-yellow-100: hsl(55, 97%, 88%);
+$-clr-yellow-200: hsl(53, 98%, 77%);
+$-clr-yellow-300: hsl(50, 98%, 64%);
+$-clr-yellow-400: hsl(48, 96%, 53%);
+$-clr-yellow-500: hsl(45, 93%, 47%);
+$-clr-yellow-600: hsl(41, 96%, 40%);
+$-clr-yellow-700: hsl(35, 92%, 33%);
+$-clr-yellow-800: hsl(32, 81%, 29%);
+$-clr-yellow-900: hsl(28, 73%, 26%);
+$-clr-yellow-950: hsl(26, 83%, 14%);
+
+
+$-clr-lime-50: hsl(78, 92%, 95%);
+$-clr-lime-100: hsl(80, 89%, 89%);
+$-clr-lime-200: hsl(81, 88%, 80%);
+$-clr-lime-300: hsl(82, 85%, 67%);
+$-clr-lime-400: hsl(83, 78%, 55%);
+$-clr-lime-500: hsl(84, 81%, 44%);
+$-clr-lime-600: hsl(85, 85%, 35%);
+$-clr-lime-700: hsl(86, 78%, 27%);
+$-clr-lime-800: hsl(86, 69%, 23%);
+$-clr-lime-900: hsl(88, 61%, 20%);
+$-clr-lime-950: hsl(89, 80%, 10%);
+
+
+$-clr-green-50: hsl(138, 76%, 97%);
+$-clr-green-100: hsl(141, 84%, 93%);
+$-clr-green-200: hsl(141, 79%, 85%);
+$-clr-green-300: hsl(142, 77%, 73%);
+$-clr-green-400: hsl(142, 69%, 58%);
+$-clr-green-500: hsl(142, 71%, 45%);
+$-clr-green-600: hsl(142, 76%, 36%);
+$-clr-green-700: hsl(142, 72%, 29%);
+$-clr-green-800: hsl(143, 64%, 24%);
+$-clr-green-900: hsl(144, 61%, 20%);
+$-clr-green-950: hsl(145, 80%, 10%);
+
+
+$-clr-emerald-50: hsl(152, 81%, 96%);
+$-clr-emerald-100: hsl(149, 80%, 90%);
+$-clr-emerald-200: hsl(152, 76%, 80%);
+$-clr-emerald-300: hsl(156, 72%, 67%);
+$-clr-emerald-400: hsl(158, 64%, 52%);
+$-clr-emerald-500: hsl(160, 84%, 39%);
+$-clr-emerald-600: hsl(161, 94%, 30%);
+$-clr-emerald-700: hsl(163, 94%, 24%);
+$-clr-emerald-800: hsl(163, 88%, 20%);
+$-clr-emerald-900: hsl(164, 86%, 16%);
+$-clr-emerald-950: hsl(166, 91%, 9%);
+
+
+$-clr-teal-50: hsl(166, 76%, 97%);
+$-clr-teal-100: hsl(167, 85%, 89%);
+$-clr-teal-200: hsl(168, 84%, 78%);
+$-clr-teal-300: hsl(171, 77%, 64%);
+$-clr-teal-400: hsl(172, 66%, 50%);
+$-clr-teal-500: hsl(173, 80%, 40%);
+$-clr-teal-600: hsl(175, 84%, 32%);
+$-clr-teal-700: hsl(175, 77%, 26%);
+$-clr-teal-800: hsl(176, 69%, 22%);
+$-clr-teal-900: hsl(176, 61%, 19%);
+$-clr-teal-950: hsl(179, 84%, 10%);
+
+
+$-clr-cyan-50: hsl(183, 100%, 96%);
+$-clr-cyan-100: hsl(185, 96%, 90%);
+$-clr-cyan-200: hsl(186, 94%, 82%);
+$-clr-cyan-300: hsl(187, 92%, 69%);
+$-clr-cyan-400: hsl(188, 86%, 53%);
+$-clr-cyan-500: hsl(189, 94%, 43%);
+$-clr-cyan-600: hsl(192, 91%, 36%);
+$-clr-cyan-700: hsl(193, 82%, 31%);
+$-clr-cyan-800: hsl(194, 70%, 27%);
+$-clr-cyan-900: hsl(196, 64%, 24%);
+$-clr-cyan-950: hsl(197, 79%, 15%);
+
+
+$-clr-sky-50: hsl(204, 100%, 97%);
+$-clr-sky-100: hsl(204, 94%, 94%);
+$-clr-sky-200: hsl(201, 94%, 86%);
+$-clr-sky-300: hsl(199, 95%, 74%);
+$-clr-sky-400: hsl(198, 93%, 60%);
+$-clr-sky-500: hsl(199, 89%, 48%);
+$-clr-sky-600: hsl(200, 98%, 39%);
+$-clr-sky-700: hsl(201, 96%, 32%);
+$-clr-sky-800: hsl(201, 90%, 27%);
+$-clr-sky-900: hsl(202, 80%, 24%);
+$-clr-sky-950: hsl(204, 80%, 16%);
+
+
+$-clr-blue-50: hsl(214, 100%, 97%);
+$-clr-blue-100: hsl(214, 95%, 93%);
+$-clr-blue-200: hsl(213, 97%, 87%);
+$-clr-blue-300: hsl(212, 96%, 78%);
+$-clr-blue-400: hsl(213, 94%, 68%);
+$-clr-blue-500: hsl(217, 91%, 60%);
+$-clr-blue-600: hsl(221, 83%, 53%);
+$-clr-blue-700: hsl(224, 76%, 48%);
+$-clr-blue-800: hsl(226, 71%, 40%);
+$-clr-blue-900: hsl(224, 64%, 33%);
+$-clr-blue-950: hsl(226, 57%, 21%);
+
+
+$-clr-indigo-50: hsl(226, 100%, 97%);
+$-clr-indigo-100: hsl(226, 100%, 94%);
+$-clr-indigo-200: hsl(228, 96%, 89%);
+$-clr-indigo-300: hsl(230, 94%, 82%);
+$-clr-indigo-400: hsl(234, 89%, 74%);
+$-clr-indigo-500: hsl(239, 84%, 67%);
+$-clr-indigo-600: hsl(243, 75%, 59%);
+$-clr-indigo-700: hsl(245, 58%, 51%);
+$-clr-indigo-800: hsl(244, 55%, 41%);
+$-clr-indigo-900: hsl(242, 47%, 34%);
+$-clr-indigo-950: hsl(244, 47%, 20%);
+
+
+$-clr-violet-50: hsl(250, 100%, 98%);
+$-clr-violet-100: hsl(251, 91%, 95%);
+$-clr-violet-200: hsl(251, 95%, 92%);
+$-clr-violet-300: hsl(252, 95%, 85%);
+$-clr-violet-400: hsl(255, 92%, 76%);
+$-clr-violet-500: hsl(258, 90%, 66%);
+$-clr-violet-600: hsl(262, 83%, 58%);
+$-clr-violet-700: hsl(263, 70%, 50%);
+$-clr-violet-800: hsl(263, 69%, 42%);
+$-clr-violet-900: hsl(264, 67%, 35%);
+$-clr-violet-950: hsl(261, 73%, 23%);
+
+
+$-clr-purple-50: hsl(270, 100%, 98%);
+$-clr-purple-100: hsl(269, 100%, 95%);
+$-clr-purple-200: hsl(269, 100%, 92%);
+$-clr-purple-300: hsl(269, 97%, 85%);
+$-clr-purple-400: hsl(270, 95%, 75%);
+$-clr-purple-500: hsl(271, 91%, 65%);
+$-clr-purple-600: hsl(271, 81%, 56%);
+$-clr-purple-700: hsl(272, 72%, 47%);
+$-clr-purple-800: hsl(273, 67%, 39%);
+$-clr-purple-900: hsl(274, 66%, 32%);
+$-clr-purple-950: hsl(274, 87%, 21%);
+
+
+$-clr-fuchsia-50: hsl(289, 100%, 98%);
+$-clr-fuchsia-100: hsl(287, 100%, 95%);
+$-clr-fuchsia-200: hsl(288, 96%, 91%);
+$-clr-fuchsia-300: hsl(291, 93%, 83%);
+$-clr-fuchsia-400: hsl(292, 91%, 73%);
+$-clr-fuchsia-500: hsl(292, 84%, 61%);
+$-clr-fuchsia-600: hsl(293, 69%, 49%);
+$-clr-fuchsia-700: hsl(295, 72%, 40%);
+$-clr-fuchsia-800: hsl(295, 70%, 33%);
+$-clr-fuchsia-900: hsl(297, 64%, 28%);
+$-clr-fuchsia-950: hsl(297, 90%, 16%);
+
+
+$-clr-pink-50: hsl(327, 73%, 97%);
+$-clr-pink-100: hsl(326, 78%, 95%);
+$-clr-pink-200: hsl(326, 85%, 90%);
+$-clr-pink-300: hsl(327, 87%, 82%);
+$-clr-pink-400: hsl(329, 86%, 70%);
+$-clr-pink-500: hsl(330, 81%, 60%);
+$-clr-pink-600: hsl(333, 71%, 51%);
+$-clr-pink-700: hsl(335, 78%, 42%);
+$-clr-pink-800: hsl(336, 74%, 35%);
+$-clr-pink-900: hsl(336, 69%, 30%);
+$-clr-pink-950: hsl(336, 84%, 17%);
+
+
+$-clr-rose-50: hsl(356, 100%, 97%);
+$-clr-rose-100: hsl(356, 100%, 95%);
+$-clr-rose-200: hsl(353, 96%, 90%);
+$-clr-rose-300: hsl(353, 96%, 82%);
+$-clr-rose-400: hsl(351, 95%, 71%);
+$-clr-rose-500: hsl(350, 89%, 60%);
+$-clr-rose-600: hsl(347, 77%, 50%);
+$-clr-rose-700: hsl(345, 83%, 41%);
+$-clr-rose-800: hsl(343, 80%, 35%);
+$-clr-rose-900: hsl(342, 75%, 30%);
+$-clr-rose-950: hsl(343, 88%, 16%);
+
+
+
+// -----------------------------------------------------------------------------
+// THEMES
+// -------------------------------------------------------------------------- */
+
+$light: (
+    "neutral": (
+        "50": $-clr-stone-50,
+        "100": $-clr-stone-100,
+        "200": $-clr-stone-200,
+        "300": $-clr-stone-300,
+        "400": $-clr-stone-400,
+        "500": $-clr-stone-500,
+        "600": $-clr-stone-600,
+        "700": $-clr-stone-700,
+        "800": $-clr-stone-800,
+        "900": $-clr-stone-900,
+        "950": $-clr-stone-950,
+    ),
+    "text": (
+        "50": #f4f1f0,
+        "100": #e9e4e2,
+        "200": #d4c8c4,
+        "300": #beada7,
+        "400": #a8918a,
+        "500": #93766c,
+        "600": #755e57,
+        "700": #584741,
+        "800": #3b2f2b,
+        "900": #1d1816,
+        "950": #0f0c0b, //default
+    ),
+    "background": (
+        "color": #ff4e56,
+    ),
+    "primary": (
+        "500": #6a412f, // default
+    ),
+    "secondary": (
+        "500": #daa38b,
+    ),
+    "accent": (
+        "50": $-clr-orange-50,
+        "100": $-clr-orange-100,
+        "200": $-clr-orange-200,
+        "300": $-clr-orange-300,
+        "400": $-clr-orange-400,
+        "500": $-clr-orange-500,
+        "600": $-clr-orange-600,
+        "700": $-clr-orange-700,
+        "800": $-clr-orange-800,
+        "900": $-clr-orange-900,
+        "950": $-clr-orange-950,
+    ),
+);
+
+
+
+
+$dark: (
+    "neutral": (
+        "950": $-clr-stone-50,
+        "900": $-clr-stone-100,
+        "800": $-clr-stone-200,
+        "700": $-clr-stone-300,
+        "600": $-clr-stone-400,
+        "500": $-clr-stone-500,
+        "400": $-clr-stone-600,
+        "300": $-clr-stone-700,
+        "200": $-clr-stone-800,
+        "100": $-clr-stone-900,
+        "50": $-clr-stone-950,
+    ),
+    "text": (
+        "color": white,
+    ),
+    "background": (
+        "color": #1c1c1c,
+        "alt-color": #262626,
+    ),
+    "primary": (
+        "500": #6a412f, // default
+    ),
+    "secondary": (
+        "500": #daa38b,
+    ),
+    "accent": (
+        "50": $-clr-orange-50,
+        "100": $-clr-orange-100,
+        "200": $-clr-orange-200,
+        "300": $-clr-orange-300,
+        "400": $-clr-orange-400,
+        "500": $-clr-orange-500,
+        "600": $-clr-orange-600,
+        "700": $-clr-orange-700,
+        "800": $-clr-orange-800,
+        "900": $-clr-orange-900,
+        "950": $-clr-orange-950,
+    ),
+);

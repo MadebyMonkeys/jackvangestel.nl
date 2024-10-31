@@ -1,0 +1,48 @@
+@use "../abstracts" as *;
+
+// -----------------------------------------------------------------------------
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+body {
+    --_body-foreground: var(--body-foreground, #{$body-foreground});
+    --_body-background: var(--body-background, #{$body-background});
+    --_body-font-family: var(--body-font-family, #{$body-font-family});
+    --_body-font-size: var(--body-font-size, #{$body-font-size});
+    --_body-font-weight: var(--body-font-weight, #{$body-font-weight});
+    --_body-line-height: var(--body-line-height, #{$body-line-height});
+
+    background: var(--_body-background);
+    color: var(--_body-foreground);
+    font-family: var(--_body-font-family);
+    font-size: var(--_body-font-size);
+    font-weight: var(--_body-font-weight);
+    line-height: var(--_body-line-height);
+}
+
+
+
+h1, h2, h3 {
+    --_heading-line-height: var(--heading-line-height, 1.1);
+
+    max-width: 20ch;
+    line-height: var(--_heading-line-height);
+}
+
+
+
+a {
+    &:not([class]) {
+        color: currentColor;
+    
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &:is([class]) {
+        text-decoration: none;
+    }
+}
+
+

@@ -1,0 +1,69 @@
+@use "../abstracts" as *;
+
+:root {
+    /* Colors.scss */
+    @each $color, $shade-map in $active-theme {
+        @each $shade, $value in $shade-map {
+            --#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+    @if ($enable-media-prefers-dark-mode) {
+        @media (prefers-color-scheme: dark) {
+            @each $color, $shade-map in $dark {
+                @each $shade, $value in $shade-map {
+                    --#{$color}-#{$shade}: #{$value};
+                }
+            }
+        }
+    }
+
+    /* Typography.scss */
+    @each $prop, $value in $font-families {
+        --ff-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $font-sizes {
+        --fs-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $font-weights {
+        --fw-#{$prop}: #{$value};
+    }
+
+
+    /* Layout.scss */
+    @each $prop, $value in $spaces {
+        --space-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $wrap-widths {
+        --width-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $aspect-ratios {
+        --ratio-#{$prop}: #{$value};
+    }
+
+
+    /* UI.scss */
+    @each $prop, $value in $border-radius {
+       --radius-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $box-shadows {
+        --shadow-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $blurs {
+        --blur-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $easings {
+        --ease-#{$prop}: #{$value};
+    }
+
+    @each $prop, $value in $layers {
+        --layer-#{$prop}: #{$value};
+    }
+}
