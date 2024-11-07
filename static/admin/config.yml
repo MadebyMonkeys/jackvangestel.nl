@@ -142,6 +142,17 @@ collections:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "body", label: "Content", widget: "markdown" }
 
+  - name: "booking"
+    label: "Boekingen page"
+    file: ""
+    files:
+      - name: "booking"
+        label: "Boekingen Section"
+        file: "content/booking/_index.md"
+        create: false
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "body", label: "Content", widget: "markdown" }
 
 
   - name: "galleries"
