@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="[ booking ] [ full-width ] [ region ]">
+    <div class="grid" data-cols="two">
+        <div>
+            <h1 class="block__title">{{.Title}}</h1>
+            {{.Content}}
+        </div>
+
+        <form class="flow" action="https://formsubmit.co/info@jackvangestel.nl" method="POST">
+            <div class="form-group flow">
+                <label for="naam">Naam</label>
+                <input type="text" name="naam" placeholder="Naam" required="">
+            </div>
+            <div class="form-group flow">
+                <label for="telefoon">Telefoon nr</label>
+                <input type="phone" name="telefoon" placeholder="Telefoon nummer" required="">
+            </div>
+            <div class="form-group flow">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Email" required="">
+            </div>
+            <div class="form-group flow">
+                <label class="">Datum</label>
+                <input type="date" name="datum" placeholder="datum" required>
+            </div>
+            <div class="form-group flow">
+                <label for="onderwerp">Onderwerp</label>
+                <input type="text" name="onderwerp" placeholder="Onderwerp" required="">
+            </div>
+            <div class="form-group flow">
+                <label for="bericht">Bericht</label>
+                <textarea rows="4" name="bericht" placeholder="Uw bericht" id="bericht"></textarea>
+            </div>
+            <button class="button" type="submit">Verzend</button>
+        </form>
+    </div>
+</section>
+{{ end }}
