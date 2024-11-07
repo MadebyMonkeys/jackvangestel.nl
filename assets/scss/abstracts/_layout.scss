@@ -1,0 +1,44 @@
+$spaces: (
+    "0": 0,
+    "3xs": clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem),
+    "2xs": clamp(0.5625rem, 0.5408rem + 0.1087vw, 0.625rem),
+    "xs": clamp(0.875rem, 0.8533rem + 0.1087vw, 0.9375rem),
+    "s": clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem),
+    "m": clamp(1.6875rem, 1.6223rem + 0.3261vw, 1.875rem),
+    "l": clamp(2.25rem, 2.163rem + 0.4348vw, 2.5rem),
+    "xl": clamp(3.375rem, 3.2446rem + 0.6522vw, 3.75rem),
+    "2xl": clamp(4.5rem, 4.3261rem + 0.8696vw, 5rem),
+    "3xl": clamp(6.75rem, 6.4891rem + 1.3043vw, 7.5rem),
+
+    "3xs-2xs": clamp(0.3125rem, 0.2038rem + 0.5435vw, 0.625rem),
+    "2xs-xs": clamp(0.5625rem, 0.4321rem + 0.6522vw, 0.9375rem),
+    "xs-s": clamp(0.875rem, 0.7446rem + 0.6522vw, 1.25rem),
+    "s-m": clamp(1.125rem, 0.8641rem + 1.3043vw, 1.875rem),
+    "m-l": clamp(1.6875rem, 1.4049rem + 1.413vw, 2.5rem),
+    "l-xl": clamp(2.25rem, 1.7283rem + 2.6087vw, 3.75rem),
+    "xl-2xl": clamp(3.375rem, 2.8098rem + 2.8261vw, 5rem),
+    "2xl-3xl": clamp(4.5rem, 3.4565rem + 5.2174vw, 7.5rem),
+
+    "s-l": clamp(1.125rem, 0.6467rem + 2.3913vw, 2.5rem),
+    "l-2xl": clamp(2.25rem, 1.2935rem + 4.7826vw, 5rem),
+);
+
+
+$wrap-widths: (
+    "xs": 640px,
+    "s": 7680px,
+    "m": 1024px,
+    "l": 1280px,
+    "xl": 1536px,
+);
+
+
+$aspect-ratios: (
+    "square": "1/1",
+    "portrait": "3/4",
+    "landscape": "4/3",
+    "tall": "2/3",
+    "wide": "3/2",
+    "widescreen": "16/9",
+    "golden": "1.618/1",
+);

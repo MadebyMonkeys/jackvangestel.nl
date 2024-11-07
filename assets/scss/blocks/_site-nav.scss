@@ -1,0 +1,74 @@
+@use "../abstracts" as *;
+
+
+.site-nav {
+    display: none;
+    width: 100%;
+    order: 3;
+
+    &__list {
+        --_nav-list-gap: var(--nav-list-gap, #{$nav-list-gap});
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--_nav-list-gap);
+    }
+
+    &__item {
+        text-align: center;
+        max-width: unset;
+        width: 100%;
+    }
+
+    &__link {
+        --_nav-link-foreground: var(--nav-link-foreground, #{$nav-link-foreground});
+        --_nav-link-foreground-hover: var(--nav-link-foreground-hover, #{$nav-link-foreground-hover});
+        --_nav-link-foreground-active: var(--nav-link-foreground-active, #{$nav-link-foreground-active});
+
+        --_nav-link-background: var(--nav-link-background, #{$nav-link-background});
+        --_nav-link-background-hover: var(--nav-link-background-hover, #{$nav-link-background-hover});
+        --_nav-link-background-active: var(--nav-link-background-active, #{$nav-link-background-active});
+
+        --_nav-link-font-family: var(--nav-link-font-family, #{$nav-link-font-family});
+        --_nav-link-font-size: var(--nav-link-font-size, #{$nav-link-font-size});
+        --_nav-link-font-weight: var(--nav-link-font-weight, #{$nav-link-font-weight});
+        --_nav-link-padding: var(--nav-link-padding, #{$nav-link-padding});
+        --_nav-link-border-radius: var(--nav-link-border-radius, #{$nav-link-border-radius});
+
+        display: block;
+        color: var(--_nav-link-foreground);
+        font-family: var(--_nav-link-font-family);
+        font-size: var(--_nav-link-font-size);
+        font-weight: var(--nav-link-font-weight);
+        padding: var(--_nav-link-padding);
+        border-radius: var(--_nav-link-border-radius);
+
+        &:is(:hover, :focus-visible) {
+            color: var(--_nav-link-foreground-hover);
+            background: var(--_nav-link-background-hover);
+        }
+
+        &[aria-current="page"] {
+            color: var(--_nav-link-foreground-active);
+            background: var(--_nav-link-background-active);
+        }
+    }
+}
+
+
+[aria-expanded="true"] + nav {
+    display: block;
+}
+
+
+
+@media (width > 768px) {
+    .site-nav {
+        display: flex;
+
+        &,
+        &__item {
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{{ if .enabled }}
+<section class="[ gallery ] [ full-width ] [ flow region ]">
+    <h2 class="block__title mx-auto">{{.title}}</h2>
+    <p class="mx-auto">{{.description}}</p>
+    <div class="grid" data-rows="masonry">
+        {{ $limitedImages := slice }}
+        {{ range $index, $image := .images }}
+            {{ $maxAmount := .max_amount | default 12 | int }}
+            {{ if lt $index $maxAmount }}
+                {{ $limitedImages = $limitedImages | append $image }}
+            {{ end }}
+        {{ end }}
+        {{ range $limitedImages }}
+            <div class="album__image">
+                <a href="{{ .url }}" data-lightbox="gallery">
+                    <img src="{{ .url }}" alt="{{ .name }}">
+                </a>
+            </div>
+        {{ end }}
+    </div>
+    {{ with .link }}
+    <div class="text-center">
+        <a href="{{.url}}" class="button">{{.title}}</a>
+    </div>
+    {{ end }}
+</section>
+{{ end }}

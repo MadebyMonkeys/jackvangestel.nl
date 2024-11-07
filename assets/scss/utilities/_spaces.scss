@@ -1,0 +1,32 @@
+@use "../abstracts" as *;
+
+
+.mx-auto {
+    margin-inline: auto;
+}
+
+
+$spacing-properties: (
+    "p": "padding",
+    "m": "margin",
+);
+
+$spacing-directions: (
+    null: null,
+    "t": "-top",
+    "r": "-right",
+    "b": "-bottom",
+    "l": "-left",
+    "v": "-block",
+    "h": "-inline",
+);
+
+@each $prop, $prop-value in $spacing-properties {
+    @each $direction, $direction-value in $spacing-directions {
+        @each $space, $space-value in $spaces {
+            .#{$prop}#{$direction}-#{$space} {
+                #{$prop-value}#{$direction-value}: #{$space-value};
+            }
+        }
+    }
+}

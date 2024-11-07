@@ -1,0 +1,1 @@
+(()=>{document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector('[aria-controls="site-nav"]');e&&e.addEventListener("click",function(){let t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",t?"false":"true")})});})();

@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.site-header {
+    --_site-header-padding-block: var(--site-header-padding-block, #{$site-header-padding-block});
+    padding-block: var(--_site-header-padding-block);
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

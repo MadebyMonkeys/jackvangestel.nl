@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section class="[ gallery-list ] [ full-width ] [ flow region ]">
+    <h1 class="block__title mx-auto">{{.Title}}</h1>
+    <p class="mx-auto">{{.Description}}</p>
+    <div class="grid" data-cols="three">
+        {{ range .Pages }}
+        <article class="album-card">
+            <a href="{{ .Permalink }}">
+            <img class="album__image" src="{{ .RelPermalink }}{{ .Params.cover_image }}" alt="{{ .Title }}">
+            <span>
+                <h4>{{ .Title }}</h4>
+                {{ $images := .Resources.Match "*.{jpg,jpeg,png,gif}" }}
+                {{ $imageCount := len $images }}
+                <small>{{ $imageCount }} foto{{ if gt $imageCount 1 }}'s{{ end }}</small>
+            </span>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

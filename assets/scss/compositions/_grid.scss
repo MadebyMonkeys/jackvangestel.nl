@@ -1,0 +1,19 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(var(--grid-placement, auto-fit), minmax(var(--grid-min-col-size, 16rem), 1fr));
+    gap: var(--grid-gap, var(--space-s-l));
+}
+
+
+.grid[data-cols="two"] {
+    --grid-min-col-size: clamp(16rem, 50vw, 26rem);
+}
+
+.grid[data-cols="three"] {
+    --grid-min-col-size: clamp(16rem, 33%, 20rem);
+}
+
+.grid[data-rows="masonry"] {
+    grid-template-rows: masonry;
+    align-items: start;
+}

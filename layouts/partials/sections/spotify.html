@@ -1,0 +1,11 @@
+{{ if .enabled }}
+<section class="[ spotify ] [ full-width ] [ flow region ]">
+    <div class="[ spotify__inner ] [ narrow ] [ flow ]">
+        <span class="block__intro">{{.intro}}</span>
+        <h2 class="block__title">{{.title}}</h2>
+        {{ with .spotify }}
+        <iframe style="border-radius:0.5em;" src="https://open.spotify.com/embed/{{.type}}/{{.id}}?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,13 @@
+{{ if .enabled }}
+<article class="[ about ] [ full full-width-split-screen ] []">
+    <div class="flow">
+        <span class="block__intro">{{.intro}}</span>
+        <h2 class="block__title">{{.title}}</h2>
+        <p>{{.body}}</p>
+        {{ with .link }}
+        <a href="{{.url}}" class="button">{{.title}}</a>
+        {{ end }}
+    </div>
+    <img src="{{.image}}" alt="Jack van gestel">
+</article>
+{{ end }}
