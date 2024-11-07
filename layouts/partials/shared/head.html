@@ -1,0 +1,17 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+
+    <meta name="description" content=" {{ if .IsHome }} {{.Site.Params.description }} {{ else if .Description }} {{ .Description }} {{ else }} {{ .Site.Params.description}} {{ end }}" />
+
+    {{- partial "shared/head/_resources.html" . -}}
+    
+    {{ $youtubeLiteCSS := resources.Get "js/lib/lite-youtube-embed/lite-yt-embed.css" | resources.Minify | resources.Copy "js/lib/lite-youtube-embed/lite-yt-embed.css" }}
+    {{ $youtubeLiteJS := resources.Get "js/lib/lite-youtube-embed/lite-yt-embed.js" | resources.Minify | resources.Copy "js/lib/lite-youtube-embed/lite-yt-embed.js" }}
+    <link rel="stylesheet" href="{{ $youtubeLiteCSS.Permalink }}">
+    <script src="{{ $youtubeLiteJS.Permalink }}"></script>
+    
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>

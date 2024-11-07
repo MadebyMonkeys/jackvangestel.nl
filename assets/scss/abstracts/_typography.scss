@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'PublicSans';
+    src: url('/fonts/PublicSans-VariableFont_wght.woff2') format('woff2-variations');
+    font-weight: 100 900;
+    font-display: swap;
+}
+
+
+$-ff-sans: 'PublicSans', sans-serif;
+$-ff-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+$-ff-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$font-families: (
+    "sans": $-ff-sans,
+    "serif": $-ff-serif,
+    "mono": $-ff-mono,
+);
+
+
+
+$font-sizes: (
+    "200": clamp(0.8333rem, 0.8176rem + 0.0787vw, 0.884rem),
+    "300": clamp(1rem, 0.9223rem + 0.3883vw, 1.25rem),
+    "400": clamp(1.2rem, 1.0237rem + 0.8816vw, 1.7675rem),
+    "500": clamp(1.44rem, 1.1109rem + 1.6454vw, 2.4992rem),
+    "600": clamp(1.728rem, 1.1669rem + 2.8053vw, 3.5339rem),
+    "700": clamp(2.0736rem, 1.1654rem + 4.5412vw, 4.997rem),
+    "800": clamp(2.4883rem, 1.0662rem + 7.1105vw, 7.0657rem),
+    "900": clamp(2.986rem, 0.8097rem + 10.8815vw, 9.9909rem),
+);
+
+
+
+$font-weights: (
+    "thin": 100,
+    "extralight": 200,
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+    "extrabold": 800,
+    "black": 900,
+);

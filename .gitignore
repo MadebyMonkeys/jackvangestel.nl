@@ -1,0 +1,6 @@
+.hugo_build.lock
+pnpm-lock.yaml
+resources
+resources/_gen
+node_modules
+public

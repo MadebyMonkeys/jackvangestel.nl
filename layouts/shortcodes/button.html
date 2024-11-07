@@ -1,0 +1,7 @@
+<a
+    class="button"
+    {{ with .Get "href" }}href="{{ . }}"{{ end }}
+    {{ with .Get "rel" }}rel="{{ . }}"{{ end }}
+    role="button">
+    {{ .Inner }}
+</a>

@@ -1,0 +1,112 @@
+@use "../abstracts" as *;
+
+.button {
+    --_button-foreground: var(--button-foreground, #{$button-foreground});
+    --_button-foreground-hover: var(--button-foreground-hover, #{$button-foreground-hover});
+    --_button-background: var(--button-background, #{$button-background});
+    --_button-background-hover: var(--button-background-hover, #{$button-background-hover});
+
+    --_button-padding: var(--button-padding, #{$button-padding});
+    --_button-gap: var(--button-gap, #{$button-gap});
+
+    --_button-border-width: var(--button-border-width, #{$button-border-width});
+    --_button-border-style: var(--button-border-style, #{$button-border-style});
+    --_button-border-color: var(--button-border-color, #{$button-border-color});
+    --_button-border-radius: var(--button-border-radius, #{$button-border-radius});
+
+    --_button-font-size: var(--button-font-size, #{$button-font-size});
+    --_button-font-weight: var(--button-font-weight, #{$button-font-weight});
+    --_button-line-height: var(--button-line-height, #{$button-line-height});
+    --_button-letter-spacing: var(--button-letter-spacing, #{$button-letter-spacing});
+
+    /* Layout and spacing */
+    display: inline-flex;
+    align-items: center;
+    gap: var(--_button-gap);
+    padding: var(--_button-padding);
+    max-width: fit-content;
+
+    /* Colours */
+    background: var(--_button-background);
+    color: var(--_button-foreground);
+
+    /* Stroke and radius */
+    border-width: var(--_button-border-width);
+    border-style: var(--_button-border-style);
+    border-color: var(--_button-border-color);
+    border-radius: var(--_button-border-radius);
+
+    /* Typography */
+    text-decoration: none;
+    font-size: var(--_button-font-size);
+    font-weight: var(--_button-font-weight);
+    letter-spacing: var(--_button-letter-spacing);
+    line-height: var(--_button-line-height);
+
+    /* Interactive */
+    cursor: pointer;
+
+    /* Animation */
+    --_button-transition: var(--button-transition, #{$button-transition});
+    transition: var(--_button-transition);
+
+
+
+    &:is(:hover, :focus-visible) {
+        color: var(--_button-foreground-hover);
+        background: var(--_button-background-hover);
+    }
+
+    &:is(:active) {
+        transform: scale(99%);
+    }
+}
+
+
+.button svg {
+    height: var(--button-icon-size, 1.2cap);
+    width: auto;
+    flex: none;
+}
+
+
+//
+//
+//
+
+
+.button[data-button-variant="primary"] {
+    --button-background: var(--primary-500);
+    --button-foreground: #342a21;
+    --button-border-color: currentColor;
+    --button-background-hover: var(--primary-300);
+    --button-foreground-hover: #342a21;
+}
+  
+.button[data-button-variant="positive"] {
+    --button-background: #2d936c;
+    --button-border-color: #107350;
+    --button-background-hover: #359d75;
+}
+  
+.button[data-button-variant="negative"] {
+    --button-background: #b33c48;
+    --button-border-color: #a62f3d;
+    --button-background-hover: #c24a56;
+}
+  
+
+
+.button[data-button="ghost"] {
+    --button-background: transparent;
+    --button-border-color: currentColor;
+    --button-foreground: currentColor;
+}
+  
+  
+
+.button[data-button-radius="hard"] {
+    --button-border-radius: 0;
+}
+  
+  

@@ -1,0 +1,66 @@
+@use "../abstracts" as *;
+
+
+//
+//
+//
+
+.hamburger {
+    background-color: var(--hamburger-background);
+    display: flex;
+    border: none;
+    padding: 0;
+
+    &__icon {
+        --_hamburger-icon-width: var(--hamburger-icon-width, #{$hamburger-icon-width});
+        --_hamburger-icon-foreground: var(--hamburger-icon-foreground, #{$hamburger-icon-foreground});
+        --_hamburger-icon-animation-timing: var(--hamburger-icon-animation-timing, #{$hamburger-icon-animation-timing});
+        --_hamburger-icon-stroke-width: var(--hamburger-icon-stroke-width, #{$hamburger-icon-stroke-width});
+
+        width: var(--_hamburger-icon-width);
+        height: var(--_hamburger-icon-width);
+
+        .line {
+            fill: none;
+            stroke: var(--_hamburger-icon-foreground);
+            stroke-width: var(--_hamburger-icon-stroke-width);
+            transition: stroke-dasharray .4s cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset .4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .line--1 {
+            stroke-dasharray: 60 207;
+        }
+        
+        .line--2 {
+            stroke-dasharray: 60 60;
+        }
+        
+        .line--3 {
+            stroke-dasharray: 60 207;
+        }
+    }
+
+
+    &[aria-expanded="true"] > .hamburger__icon {
+        .line--1 {
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+          }
+        .line--2 {
+            stroke-dasharray: 1 60;
+            stroke-dashoffset: -30;
+          }
+        .line--3 {
+            stroke-dasharray: 90 207;
+            stroke-dashoffset: -134;
+          }
+    }
+}
+
+
+
+@media (width > 768px) {
+    .hamburger {
+        display: none;
+    }
+}

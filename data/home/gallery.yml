@@ -1,0 +1,16 @@
+enabled: true
+id: "Gallery"
+max_amount: 9
+
+title: "Gallery"
+description: "Een kleine selectie uit onze albums"
+link:
+  title: Bekijk volledige gallerij
+  url: "gallery"
+images:
+  - name: Image name
+    url: "/media/about-img.png"
+  - name: Image name
+    url: "/media/about-img2.png"
+  - name: Image name
+    url: "/media/about-img.png"

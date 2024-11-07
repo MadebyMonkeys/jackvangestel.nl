@@ -1,0 +1,10 @@
+enabled: true
+id: "About"
+
+intro: Over Jack van gestel
+title: Leer mij kennen
+body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci delectus placeat harum illum tempora repellendus dolorem cumque dignissimos numquam!
+link:
+  title: Lees verder
+  url: "about"
+image: "/media/about-img.png"

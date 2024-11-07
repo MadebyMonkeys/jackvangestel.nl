@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="[] [ full-width ] [ flow region ]">
+    <div class="grid" data-col="two">
+        <div class="flow">
+            <h1 class="block__title">{{.Title}}</h1>
+            {{.Content}}
+        </div>
+
+        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform" class="flow">
+            <!-- Replace with your StaticForms accessKey -->
+            <input type="hidden" name="accessKey" value="replace-with-your-access-key">
+            <input type="hidden" name="subject" value="Test from jsfiddle">
+            <!-- Replace with the url you want to redirect to -->
+            <input type="hidden" name="redirectTo" value="https://www.google.com">
+            <div class="field">
+            <label class="label">Naam</label>
+            <div class="control">
+                <input class="input" type="text" name="name" placeholder="Name" required>
+            </div>
+            </div>
+            <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+                <input class="input" type="email" name="email" placeholder="Email" required>
+            </div>
+            </div>
+            <div class="field">
+            <label class="label">Bericht</label>
+            <div class="control">
+                <textarea class="textarea" name="message" placeholder="Typ uw bericht" required></textarea>
+            </div>
+            </div>
+            <button class="button is-primary" type="Submit">Verzend</button>
+        </form>
+    </div>
+</section>
+{{ end }}

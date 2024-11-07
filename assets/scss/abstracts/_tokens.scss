@@ -1,0 +1,115 @@
+@use "colors" as *;
+
+// -----------------------------------------------------------------------------
+// THEME
+// -----------------------------------------------------------------------------
+
+$active-theme: $dark;
+$enable-media-prefers-dark-mode: false;
+
+
+
+//
+// Hamburger
+//
+$hamburger-padding: var(--size-2xs) var(--size-3xs);
+
+$hamburger-icon-foreground: var(--text-color);
+$hamburger-icon-width: 48px;
+$hamburger-icon-stroke-width: 7px;
+$hamburger-icon-animation-timing: 600ms;
+
+
+// -----------------------------------------------------------------------------
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+$body-foreground: var(--text-color);
+$body-background: var(--background-color);
+$body-font-family: var(--ff-sans);
+$body-font-size: var(--fs-300);
+$body-font-weight: var(--fw-regular);
+$body-line-height: 1.5;
+
+
+
+// -----------------------------------------------------------------------------
+// SITE HEADER
+// -----------------------------------------------------------------------------
+
+$site-header-padding-block: var(--space-xs);
+
+
+
+// -----------------------------------------------------------------------------
+// SITE NAV
+// -----------------------------------------------------------------------------
+
+$nav-list-gap: .375em;
+
+$nav-link-foreground: var(--neutral-700);
+$nav-link-foreground-hover: var(--neutral-800);
+$nav-link-foreground-active: var(--neutral-950);
+
+$nav-link-background: transparent;
+$nav-link-background-hover: var(--neutral-100);
+$nav-link-background-active: var(--neutral-50);
+
+$nav-link-font-family: var(--ff-sans);
+$nav-link-font-size: var(--fs-300);
+$nav-link-font-weight: var(--fw-regular);
+$nav-link-padding: var(--space-xs) var(--space-s);
+
+$nav-link-border-radius: var(--radius-m);
+
+
+
+// -----------------------------------------------------------------------------
+// SPLIT SCREEN
+// -----------------------------------------------------------------------------
+
+$split-screen-content-width: 1350px;
+$split-screen-content-padding: clamp(1em, 6dvw, 3em);
+$split-screen-padding-block: var(--space-l-2xl);
+$split-screen-padding-inline: 2rem;
+
+
+
+// -----------------------------------------------------------------------------
+// BUTTON
+// -----------------------------------------------------------------------------
+
+$button-foreground: var(--neutral-950);
+$button-foreground-hover: var(--neutral-950);
+
+$button-background: linear-gradient(to bottom right, #ff844f, #ff7b4e, #ff674e, #ff4e56, #f24b53);
+$button-background-hover: var(--neutral-50);
+
+$button-padding: var(--space-s) var(--space-m);
+$button-gap: var(--space-3xs);
+
+$button-border-width: 2px;
+$button-border-style: solid;
+$button-border-color: transparent;
+$button-border-radius: var(--radius-full);
+
+$button-font-size: var(--fs-200);
+$button-font-weight: var(--fw-semibold);
+$button-line-height: 1.1;
+$button-letter-spacing: 0.05ch;
+
+$button-transition: background 300ms var(--ease-in-out-cubic), linear-gradient 300ms var(--ease-in-out-cubic), color 400ms var(--ease-in-out-cubic);
+
+
+
+//
+//
+//
+
+$badge-background: transpartent;
+$badge-foreground: var(--neutral-900);
+$badge-padding: var(--space-3xs) var(--space-2xs);
+$badge-border-width: 1px;
+$badge-border-style: solid;
+$badge-border-color: currentColor;
+$badge-border-radius: 3rem;

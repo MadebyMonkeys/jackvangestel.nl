@@ -1,0 +1,8 @@
+enabled: true
+id: "spotify"
+
+intro: "Mijn muziek"
+title: "luister en zing mee"
+spotify:
+  type: artist
+  id: 4X3xIfiPFFvCKHxJKK5lRo
