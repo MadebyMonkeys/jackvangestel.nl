@@ -80,14 +80,14 @@ License: MIT
   top: -0.8em;
   right: -0.8em;
   background-size: 40%;
-  background-image: url('/images/icons/icon-lightbox-close.svg');
+  background-image: url('/icons/icon-lightbox-close.svg');
 }
 
 .lightbox-btn-next,
 .lightbox-btn-previous {
   top: calc(50% - (2.2em / 2));
   background-size: 25% 80%;
-  background-image: url('/images/icons/icon-lightbox-arrow.svg');
+  background-image: url('/icons/icon-lightbox-arrow.svg');
 }
 
 .lightbox-btn-previous {
