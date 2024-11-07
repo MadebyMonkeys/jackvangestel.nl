@@ -31,5 +31,7 @@ params:
       - title: "Gallery"
         url: "/gallery"
       - title: Contact
-        button: true
         url: "/contact"
+      - title: Boek nu
+        button: true
+        url: "/booking"
