@@ -1,0 +1,22 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      lite-youtube-embed:
+        specifier: ^0.3.3
+        version: 0.3.3
+
+packages:
+
+  lite-youtube-embed@0.3.3:
+    resolution: {integrity: sha512-gFfVVnj6NRjxVfJKo3qoLtpi0v5mn3AcR4eKD45wrxQuxzveFJUb+7Cr6uV6n+DjO8X3p0UzPPquhGt0H/y+NA==}
+
+snapshots:
+
+  lite-youtube-embed@0.3.3: {}
