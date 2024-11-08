@@ -21,6 +21,7 @@ collections:
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "", label: "", widget: "" }
 
 
   - name: "home"
@@ -155,6 +156,7 @@ collections:
           - { name: "body", label: "Content", widget: "markdown" }
 
 
+
   - name: "galleries"
     label: "Galleries"
     folder: "content/gallery"
@@ -170,9 +172,9 @@ collections:
     fields:
       - {label: "Visible", name: "visible", widget: hidden, default: true}
       - { name: "title", label: "Title", widget: "string" }
-      - { name: "date", label: "Datum", widget: "datetime", date_format: "YYYY.MM.DD" }
-      - { name: "cover_image", label: "Cover image", widget: "image",  }
+      - { name: "date", label: "Datum", widget: "datetime", date_format: "DD.MM.YYYY" }
       - { name: "description", label: "Beschrijving", widget: "text" }
+      - { name: "cover_image", label: "Cover image", widget: "image",  }
       - {
           name: "images",
           label: "Album Images",

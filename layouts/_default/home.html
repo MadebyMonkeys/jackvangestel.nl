@@ -1,14 +1,19 @@
-{{ define "main" }}
-{{ with .Site.Data.home.hero }}
-    {{ partial "sections/hero.html" . }}
-{{ end }}
-{{ with .Site.Data.home.spotify }}
-    {{ partial "sections/spotify.html" . }}
-{{ end }}
-{{ with .Site.Data.home.about }}
-    {{ partial "sections/about.html" . }}
-{{ end }}
-{{ with .Site.Data.home.gallery }}
-    {{ partial "sections/gallery.html" . }}
-{{ end }}
-{{ end }}
+
+
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "shared/head.html" . }}
+<body>
+    <header class="[ site-header ] [ full-width ] []">
+        <div class="site-header__inner">
+            <a class="brand" href="/">
+                <span class="brand__name">{{ .Site.Title }}</span>
+            </a>
+        </div>
+    </header>
+    <main class="full-width">
+        <h1 class="mx-auto">Website coming soon</h1>
+    </main>
+    {{ partial "shared/footer.html" . }}
+</body>
+</html>

@@ -6,54 +6,41 @@
 //
 
 .hamburger {
-    background-color: var(--hamburger-background);
-    display: flex;
-    border: none;
-    padding: 0;
+    --_hamburger-icon-width: var(--hamburger-icon-width, #{$hamburger-icon-width});
+    --_hamburger-icon-foreground: var(--hamburger-icon-foreground, #{$hamburger-icon-foreground});
+    --_hamburger-icon-animation-timing: var(--hamburger-icon-animation-timing, #{$hamburger-icon-animation-timing});
+
+    width: var(--_hamburger-icon-width);
+    height: var(--_hamburger-icon-width);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
 
     &__icon {
-        --_hamburger-icon-width: var(--hamburger-icon-width, #{$hamburger-icon-width});
-        --_hamburger-icon-foreground: var(--hamburger-icon-foreground, #{$hamburger-icon-foreground});
-        --_hamburger-icon-animation-timing: var(--hamburger-icon-animation-timing, #{$hamburger-icon-animation-timing});
-        --_hamburger-icon-stroke-width: var(--hamburger-icon-stroke-width, #{$hamburger-icon-stroke-width});
-
-        width: var(--_hamburger-icon-width);
-        height: var(--_hamburger-icon-width);
+        g {
+            --_hamburger-icon-stroke-width: var(--hamburger-icon-stroke-width, #{$hamburger-icon-stroke-width});
+            stroke-width: var(--_hamburger-icon-stroke-width);
+        }
 
         .line {
-            fill: none;
             stroke: var(--_hamburger-icon-foreground);
-            stroke-width: var(--_hamburger-icon-stroke-width);
-            transition: stroke-dasharray .4s cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset .4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .line--1 {
-            stroke-dasharray: 60 207;
-        }
-        
-        .line--2 {
-            stroke-dasharray: 60 60;
-        }
-        
-        .line--3 {
-            stroke-dasharray: 60 207;
+            transform-origin: center;
+            transition: var(--_hamburger-icon-animation-timing);
         }
     }
+}
 
-
-    &[aria-expanded="true"] > .hamburger__icon {
-        .line--1 {
-            stroke-dasharray: 90 207;
-            stroke-dashoffset: -134;
-          }
-        .line--2 {
-            stroke-dasharray: 1 60;
-            stroke-dashoffset: -30;
-          }
-        .line--3 {
-            stroke-dasharray: 90 207;
-            stroke-dashoffset: -134;
-          }
+.hamburger[aria-expanded="true"] > .hamburger__icon {
+    .line--1 {
+        transform-origin: 80% 35%;
+        transform: rotate(-45deg);
+    }
+    .line--2 {
+        transform: scaleX(0);
+    }
+    .line--3 {
+        transform-origin: 80% 65%;
+        transform: rotate(45deg);
     }
 }
 

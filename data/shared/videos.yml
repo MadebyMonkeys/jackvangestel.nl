@@ -1,0 +1,12 @@
+enabled: true
+id: "video"
+
+title: Video's
+description: collectie van officiele video clips
+video_list:
+  - title: "Het werd zomer"
+    video_id: "53HFE77190U"
+    image: "/media/video-het-werd-zomer.webp"
+  - title: "Terug naar de kust"
+    video_id: "WbjrODL81ok"
+    image: "/media/video-terug-naar-de-kust.webp"

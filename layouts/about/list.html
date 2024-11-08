@@ -9,4 +9,7 @@
 {{ with .Site.Data.about.gallery }}
     {{ partial "sections/gallery.html" . }}
 {{ end }}
+{{ with .Site.Data.shared.videos }}
+    {{ partial "sections/videos.html" . }}
+{{ end }}
 {{ end }}

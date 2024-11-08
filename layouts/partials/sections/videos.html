@@ -1,0 +1,11 @@
+{{ if .enabled }}
+<section class="[ videos ] [ full-width ] [ flow region ]">
+    <h2 class="block__title mx-auto">{{ .title }}</h2>
+    <p class="mx-auto">{{ .description }}</p>
+    <div class="grid" data-cols="two">
+        {{ range .video_list }}
+        <lite-youtube videoid="{{ .video_id }}" title="{{.title}}" playlabel="{{.title}}" style="background-image: url('{{ .image }}'); border-radius: var(--radius-xl);"></lite-youtube>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
