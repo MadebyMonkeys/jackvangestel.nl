@@ -102,6 +102,8 @@ collections:
 
   - name: "about"
     label: "About page"
+    editor:
+      preview: false
     file: ""
     files:
       - name: "about"
@@ -143,6 +145,8 @@ collections:
 
   - name: "gallery"
     label: "Gallery page"
+    editor:
+      preview: false
     file: ""
     files:
       - name: "gallery"
@@ -162,6 +166,8 @@ collections:
 
   - name: "contact"
     label: "Contact page"
+    editor:
+      preview: false
     file: ""
     files:
       - name: "contact"
@@ -170,7 +176,7 @@ collections:
         create: false
         fields:
           - label: "SEO"
-            name: "seo"
+            name: "meta"
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
@@ -180,6 +186,8 @@ collections:
 
   - name: "booking"
     label: "Boekingen page"
+    editor:
+      preview: false
     file: ""
     files:
       - name: "booking"
