@@ -29,7 +29,7 @@ collections:
     editor:
       preview: false
     files:
-      - name: "seo"
+      - name: "meta"
         label: "Seo settings"
         file: "content/_index.md"
         fields:
@@ -112,7 +112,7 @@ collections:
         create: false
         fields:
           - label: "SEO"
-            name: "seo"
+            name: "meta"
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
@@ -127,7 +127,7 @@ collections:
         file: "data/about/gallery.yml"
         fields:
           - label: "SEO"
-            name: "seo"
+            name: "meta"
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
@@ -157,7 +157,7 @@ collections:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "description", label: "description", widget: "string" }
           - label: "SEO"
-            name: "seo"
+            name: "meta"
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
@@ -196,7 +196,7 @@ collections:
         create: false
         fields:
           - label: "SEO"
-            name: "seo"
+            name: "meta"
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
@@ -221,7 +221,7 @@ collections:
     fields:
       - {label: "Visible", name: "visible", widget: hidden, default: true}
       - label: "SEO"
-        name: "seo"
+        name: "meta"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }

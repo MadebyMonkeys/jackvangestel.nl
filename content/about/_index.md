@@ -3,9 +3,6 @@ title: Over mij
 description: Over jack van gestel
 image: /media/about-img2.png
 meta:
-  title: Deze title is voor SEO doeleinde
-  description: Beschrijving van de pagina
-seo:
   description: Jack van gestel is een zanger uit waalwijk...
   title: Jack van gestel biography
 ---
