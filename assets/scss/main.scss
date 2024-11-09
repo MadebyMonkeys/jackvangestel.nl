@@ -44,6 +44,10 @@ textarea {
     }
 }
 
+form {
+    --flow-space: .5em;
+}
+
 
 // -----------------------------------------------------------------------------
 //
@@ -73,6 +77,12 @@ textarea {
         object-fit: cover;
         grid-column: popout;
     }
+}
+
+
+
+.hamburger__icon {
+    height: 3ch;
 }
 
 
@@ -224,11 +234,38 @@ textarea {
 }
 
 
-form {
-    --flow-space: .5em;
+
+.social {
+    &__list {
+        
+        li a {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            width: fit-content;
+
+            &:is(:hover, :focus-visible) {
+                color: var(--accent-500);
+            }
+
+            span {
+                margin-left: 1rem;
+            }
+        }
+    }
 }
 
 
-.hamburger__icon {
-    height: 3ch;
+.thanks {
+    h1, p, a{
+        margin-inline: auto;
+        text-align: center;
+    }
+}
+
+.social-links {
+    a {
+        padding: var(--space-s);
+    }
 }

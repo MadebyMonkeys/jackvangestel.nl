@@ -1,20 +1,18 @@
+<meta name="description" content="{{ .Description }}">
+
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:title" content="{{ .Title | default .Site.Params.defaultTitle }}">
-<meta property="og:description" content="{{ .Params.description | default .Site.Params.defaultDescription }}">
-<meta property="og:image" content="{{ .Params.image | default .Site.Params.defaultImage }}">
-<meta property="og:site_name" content="Your Site Name">
+<meta property="og:title" content="{{ with .Params.meta.title }}{{ . }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Params.meta.description }}{{ . }}{{ else }}{{ .Description }}{{ end }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
 <meta property="og:locale" content="{{ .Site.LanguageCode }}">
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="{{ .Permalink }}">
-<meta name="twitter:title" content="{{ .Title | default .Site.Params.defaultTitle }}">
-<meta name="twitter:description" content="{{ .Params.description | default .Site.Params.defaultDescription }}">
-<meta name="twitter:image" content="{{ .Params.image | default .Site.Params.defaultImage }}">
-<meta name="twitter:site" content="{{ .Site.Params.twitterHandle }}">
-<meta name="twitter:creator" content="{{ .Site.Params.twitterHandle }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ with .Params.meta.title }}{{ . }}{{ else }}{{ .Title }}{{ end }}">
+<meta name="twitter:description" content="{{ with .Params.meta.description }}{{ . }}{{ else }}{{ .Description }}{{ end }}">
 
 <!-- Additional SEO Tags (optional) -->
 <link rel="canonical" href="{{ .Permalink }}">

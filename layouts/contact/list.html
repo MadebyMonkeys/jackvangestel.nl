@@ -4,14 +4,14 @@
         <div class="flow">
             <h1 class="block__title">{{.Title}}</h1>
             {{.Content}}
+
+            {{ partial "components/socialList.html" . }}
         </div>
 
-        <form action="https://api.staticforms.xyz/submit" method="post" id="staticform" class="flow">
-            <!-- Replace with your StaticForms accessKey -->
-            <input type="hidden" name="accessKey" value="replace-with-your-access-key">
-            <input type="hidden" name="subject" value="Test from jsfiddle">
-            <!-- Replace with the url you want to redirect to -->
-            <input type="hidden" name="redirectTo" value="https://www.google.com">
+        <form class="flow" action="https://formsubmit.co/info@jackvangestel.nl" method="POST">
+            <input type="hidden" name="_next" value="https://jackvangestel.nl/thanks">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
             <div class="field flow">
             <label class="label">Naam</label>
             <div class="control">

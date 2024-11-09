@@ -291,20 +291,11 @@ $light: (
         "950": $-clr-stone-950,
     ),
     "text": (
-        "50": #f4f1f0,
-        "100": #e9e4e2,
-        "200": #d4c8c4,
-        "300": #beada7,
-        "400": #a8918a,
-        "500": #93766c,
-        "600": #755e57,
-        "700": #584741,
-        "800": #3b2f2b,
-        "900": #1d1816,
-        "950": #0f0c0b, //default
+        "color": #222,
     ),
     "background": (
-        "color": #ff4e56,
+        "color": #ffffff,
+        "alt-color": #f7f7f7,
     ),
     "primary": (
         "500": #6a412f, // default

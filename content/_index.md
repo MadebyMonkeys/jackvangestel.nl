@@ -1,8 +1,6 @@
 ---
-title: Foto Galerij
-description: Hier een paar albums met mooie momenten
-visible: false
-image: ""
+title: Homepage
+description: Home page description
 
 meta:
   title: Deze title is voor SEO doeleinde

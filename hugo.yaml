@@ -1,10 +1,10 @@
 baseURL: "https://jackvangestel.nl/"
-languageCode: "en-us"
+languageCode: "nl"
 title: Jack van Gestel
 logo: ""
 
 enableRobotTXT: true
-paginate: 10
+pagerSize: 10
 summarylength: 0
 enableEmoji: true
 
@@ -22,6 +22,7 @@ markup:
         title: true
 
 params:
+  # Menu
   menus:
     main:
       - title: "Home"
@@ -35,3 +36,15 @@ params:
       - title: Boek nu
         button: true
         url: "/booking"
+
+  # Social links
+  socials:
+    - platform: facebook
+      url: "https://facebook.com/groups"
+      handle: "1662639874283648"
+    - platform: instagram
+      url: "https://instagram.com"
+      handle: "jack.vangestel"
+    - platform: tiktok
+      url: "https://tiktok.com"
+      handle: "@jack.van.gestel3"

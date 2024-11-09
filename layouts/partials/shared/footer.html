@@ -1,5 +1,15 @@
 <footer class="[ site-footer ] [ full-width ] [ region ]">
-    <p>&copy; Copyright 2024 {{ .Site.Title }}</p>
+    <div class="site-footer__inner flow">
+        <p>&copy; Copyright 2024 {{ .Site.Title }}</p>
+
+        <div class="social-links flex-group">
+            {{ range .Site.Params.socials }}
+            <a href="{{ .url }}/{{ .handle }}">
+                <ion-icon size="large" name="logo-{{ .platform }}"></ion-icon>
+            </a>
+            {{ end }}
+        </div>
+    </div>
 </footer>
 
 {{/*  load in youtubeLite  */}}

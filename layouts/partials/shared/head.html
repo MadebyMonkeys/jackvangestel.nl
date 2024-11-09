@@ -5,7 +5,7 @@
     <link rel="canonical" href="{{ .Permalink }}">
 
     <meta name="description" content=" {{ if .IsHome }} {{.Site.Params.description }} {{ else if .Description }} {{ .Description }} {{ else }} {{ .Site.Params.description}} {{ end }}" />
-
+    {{ partial "shared/head/_seo.html" . }}
     {{- partial "shared/head/_resources.html" . -}}
     
     {{ $youtubeLiteCSS := resources.Get "js/lib/lite-youtube-embed/lite-yt-embed.css" | resources.Minify | resources.Copy "js/lib/lite-youtube-embed/lite-yt-embed.css" }}

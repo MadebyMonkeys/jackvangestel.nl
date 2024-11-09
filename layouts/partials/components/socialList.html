@@ -1,0 +1,10 @@
+<ul class="social__list flow" role="list">
+    {{ range .Site.Params.socials }}
+    <li>
+        <a href="{{ .url }}/{{ .handle }}">
+            <ion-icon name="logo-{{ .platform }}"></ion-icon>
+            <span>{{ .handle }}</span>
+        </a>
+    </li>
+    {{ end }}
+</ul>

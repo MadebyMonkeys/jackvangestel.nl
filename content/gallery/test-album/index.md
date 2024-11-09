@@ -12,4 +12,8 @@ images:
   - krys-amon-vn8Falk7JbU-unsplash.jpg
   - robert-bye-JBVCgZ64llY-unsplash.jpg
   - sash-ka-5cPVBoBj6Zo-unsplash.jpg
+
+meta:
+  title: Deze title is voor SEO doeleinde
+  description: Beschrijving van de pagina
 ---
