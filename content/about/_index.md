@@ -1,11 +1,13 @@
 ---
-title: About me
-description: About description
-image: "/media/about-img2.png"
-
+title: Over mij
+description: Over jack van gestel
+image: /media/about-img2.png
 meta:
   title: Deze title is voor SEO doeleinde
   description: Beschrijving van de pagina
+seo:
+  description: Jack van gestel is een zanger uit waalwijk...
+  title: Jack van gestel biography
 ---
 Proin lacinia aliquam magna nec convallis. Aliquam erat ipsum, vehicula nec bibendum aliquet, blandit ut ex. Donec tempor tempus nulla vel ornare. In hac habitasse platea dictumst.
 
