@@ -22,17 +22,13 @@ collections:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "logo", label: "Logo", widget: "image" }
 
-          - name: "params"
+          - name: "socials"
             label: "Social Media Links"
             widget: "list"
             field:
-              name: "socials"
-              label: "Platform"
-              widget: "object"
-              fields:
-                - { name: "platform", label: "Platform", widget: "string" }
-                - { name: "url", label: "URL", widget: "string" }
-                - { name: "handle", label: "Handle", widget: "string" }
+              - { name: "platform", label: "Platform", widget: "string" }
+              - { name: "url", label: "URL", widget: "string" }
+              - { name: "handle", label: "Handle", widget: "string" }
 
 
   - name: "home"
