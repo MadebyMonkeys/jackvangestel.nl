@@ -3,8 +3,7 @@ title: Foto Galerij
 description: Hier een paar albums met mooie momenten
 visible: false
 image: ""
-
 meta:
-  title: Deze title is voor SEO doeleinde
-  description: Beschrijving van de pagina
+  title: Jack van gestel foto galerij
+  description: Galerij met diverse fotos
 ---
