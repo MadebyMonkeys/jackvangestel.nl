@@ -1,10 +1,12 @@
 <ul class="social__list flow" role="list">
-    {{ range .Site.Data.shared.socials.list.platform_details }}
-    <li>
-        <a href="{{ .url }}">
-            <ion-icon name="logo-{{ .icon }}"></ion-icon>
-            <span>{{ .handle }}</span>
-        </a>
-    </li>
+    {{ range .Site.data.shared.socials.list }}
+        {{ with .platform_details }}
+        <li>
+            <a href="{{ .url }}">
+                <ion-icon name="logo-{{ .icon }}"></ion-icon>
+                <span>{{ .handle }}</span>
+            </a>
+        </li>
+        {{ end }}
     {{ end }}
 </ul>

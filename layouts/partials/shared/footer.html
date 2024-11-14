@@ -3,10 +3,12 @@
         <p>&copy; Copyright 2024 {{ .Site.Title }}</p>
 
         <div class="social-links flex-group">
-            {{ range .Site.Data.shared.socials.list.platform_details }}
-            <a href="{{ .url }}">
-                <ion-icon size="large" name="logo-{{ .icon }}"></ion-icon>
-            </a>
+            {{ range .Site.data.shared.socials.list }}
+                {{ with .platform_details }}
+                <a href="{{ .url }}">
+                    <ion-icon size="large" name="logo-{{ .icon }}"></ion-icon>
+                </a>
+                {{ end }}
             {{ end }}
         </div>
     </div>
