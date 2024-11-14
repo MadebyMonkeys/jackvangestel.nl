@@ -156,30 +156,6 @@ collections:
             - { name: "name", label: "Name", widget: "sting" }
             - { name: "url", label: "Url", widget: "image" }
 
-      - name: "video_list"
-        label: "Video Section"
-        file: "data/shared/videos.yml"
-        fields:
-          - name: "title"
-            label: "Title"
-            widget: "string"
-          - name: "description"
-            label: "Description"
-            widget: "text"
-          - name: "video_list"
-            label: "Video List"
-            widget: "list"
-            fields:
-              - name: "title"
-                label: "Video Title"
-                widget: "string"
-              - name: "video_id"
-                label: "Video ID"
-                widget: "string"
-              - name: "image"
-                label: "Image"
-                widget: "image"
-
 
   - name: "gallery"
     label: "Gallery page"
@@ -243,30 +219,35 @@ collections:
               - { label: "Beschrijving", name: "description", widget: "text" }
 
 
-
-  - name: "video_list"
-    label: "Videos"
-    file: "data/shared/videos.yml"
-    fields:
-      - name: "title"
-        label: "Title"
-        widget: "string"
-      - name: "description"
-        label: "Description"
-        widget: "text"
+  - name: "videos"
+    label: "Video lijst"
+    delete: false
+    editor:
+      preview: false
+    files:
       - name: "video_list"
-        label: "Video List"
-        widget: "list"
+        label: "Video Section"
+        file: "data/shared/videos.yml"
         fields:
           - name: "title"
-            label: "Video Title"
+            label: "Title"
             widget: "string"
-          - name: "video_id"
-            label: "Video ID"
-            widget: "string"
-          - name: "image"
-            label: "Image"
-            widget: "image"
+          - name: "description"
+            label: "Description"
+            widget: "text"
+          - name: "video_list"
+            label: "Video List"
+            widget: "list"
+            fields:
+              - name: "title"
+                label: "Video Title"
+                widget: "string"
+              - name: "video_id"
+                label: "Video ID"
+                widget: "string"
+              - name: "image"
+                label: "Image"
+                widget: "image"
 
   - name: "galleries"
     label: "Gallerij Albums"
