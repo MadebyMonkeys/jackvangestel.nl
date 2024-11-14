@@ -4,7 +4,7 @@
 
         <div class="social-links flex-group">
             {{ range .Site.Data.shared.socials }}
-            <a href="{{ .url }}/{{ .handle }}">
+            <a href="{{ .url }}">
                 <ion-icon size="large" name="logo-{{ .platform }}"></ion-icon>
             </a>
             {{ end }}

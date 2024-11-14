@@ -29,7 +29,7 @@ collections:
             label: "Social Media Links"
             widget: "list"
             fields: [
-              { name: "platform", label: "Platform", widget: "string" },
+              { name: "icon", label: "Platform", widget: "string" },
               { name: "url", label: "URL", widget: "string" },
               { name: "handle", label: "Handle", widget: "string" }
             ]

@@ -1,10 +1,10 @@
 # Social links
-- platform: facebook
-  url: "https://facebook.com/groups"
-  handle: "1662639874283648"
-- platform: instagram
-  url: "https://instagram.com"
-  handle: "jack.vangestel"
-- platform: tiktok
-  url: "https://tiktok.com"
+- icon: facebook
+  url: "https://facebook.com/groups/1662639874283648"
+  handle: Jack van Gestel Fan pagina
+- icon: instagram
+  url: "https://instagram.com/jack.vangestel"
+  handle: "@jack.vangestel"
+- icon: tiktok
+  url: "https://tiktok.com/@jack.van.gestel3"
   handle: "@jack.van.gestel3"
