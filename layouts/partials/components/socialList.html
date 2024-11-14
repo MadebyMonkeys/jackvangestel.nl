@@ -1,5 +1,5 @@
 <ul class="social__list flow" role="list">
-    {{ range .Site.Data.shared.socials.item }}
+    {{ range .Site.Data.shared.socials }}
     <li>
         <a href="{{ .url }}/{{ .handle }}">
             <ion-icon name="logo-{{ .platform }}"></ion-icon>
