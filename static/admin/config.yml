@@ -100,6 +100,32 @@ collections:
 
 
 
+      - name: "video_list"
+        label: "Video Section"
+        file: "data/shared/videos.yml"
+        fields:
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "description"
+            label: "Description"
+            widget: "text"
+          - name: "video_list"
+            label: "Video List"
+            widget: "list"
+            fields:
+              - name: "title"
+                label: "Video Title"
+                widget: "string"
+              - name: "video_id"
+                label: "Video ID"
+                widget: "string"
+              - name: "image"
+                label: "Image"
+                widget: "image"
+
+
+
       - name: "gallery"
         label: "Gallery Section"
         file: "data/home/gallery.yml"
@@ -155,6 +181,30 @@ collections:
             fields:
             - { name: "name", label: "Name", widget: "sting" }
             - { name: "url", label: "Url", widget: "image" }
+
+      - name: "video_list"
+        label: "Video Section"
+        file: "data/shared/videos.yml"
+        fields:
+          - name: "title"
+            label: "Title"
+            widget: "string"
+          - name: "description"
+            label: "Description"
+            widget: "text"
+          - name: "video_list"
+            label: "Video List"
+            widget: "list"
+            fields:
+              - name: "title"
+                label: "Video Title"
+                widget: "string"
+              - name: "video_id"
+                label: "Video ID"
+                widget: "string"
+              - name: "image"
+                label: "Image"
+                widget: "image"
 
 
   - name: "gallery"
