@@ -21,12 +21,15 @@ collections:
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "logo", label: "Logo", widget: "image" }
-
+      - name: "socialmedia"
+        label: "Socialmedia settings"
+        file: "data/shared/socials.yml"
+        fields:
           - name: "socials"
             label: "Social Media Links"
             widget: "list"
             field:
-              name: "list"
+              name: "item"
               label: "Platform"
               widget: "object"
               fields:
