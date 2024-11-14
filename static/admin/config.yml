@@ -29,9 +29,14 @@ collections:
             label: "Social Media Links"
             widget: "list"
             fields:
-              - { name: "icon", label: "Platform", widget: "string" }
-              - { name: "url", label: "URL", widget: "string" }
-              - { name: "handle", label: "Handle", widget: "string" }
+              - name: "platform_details"
+                label: "Platform Details"
+                widget: "object"
+                fields:
+                  - { name: "platform", label: "Platform", widget: "string" }
+                  - { name: "icon", label: "Icon", widget: "string" }
+                  - { name: "url", label: "URL", widget: "string" }
+                  - { name: "handle", label: "Handle", widget: "string" }
 
 
   - name: "home"
