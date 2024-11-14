@@ -1,5 +1,10 @@
 {
+	"scripts": {
+		"build:css": "sass assets/scss/main.scss:static/css/styles.css --style=compressed",
+		"build": "npm run build:css && hugo --gc --minify"
+	},
 	"devDependencies": {
-		"lite-youtube-embed": "^0.3.3"
+		"lite-youtube-embed": "^0.3.3",
+		"sass": "^1.80.7"
 	}
 }

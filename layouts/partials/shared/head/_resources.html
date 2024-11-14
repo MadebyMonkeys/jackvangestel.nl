@@ -1,14 +1,8 @@
-{{ with resources.Get "scss/main.scss" }}
-    {{ $opts := dict "transpiler" "dartsass" "targetPath" "css/styles.css" }}
-    {{ with . | toCSS $opts | minify }}
-        {{ if hugo.IsDevelopment }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}">
-        {{ else }}
-            {{ with . | minify | fingerprint }}
-                <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-            {{ end }}
-        {{ end }}
-    {{ end }}
+{{ if hugo.IsDevelopment }}
+    <link rel="stylesheet" href="/css/styles.css">
+{{ else }}
+    {{ $css := resources.Get "css/styles.css" | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
 
 

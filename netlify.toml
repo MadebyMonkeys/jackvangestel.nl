@@ -1,17 +1,10 @@
 [build]
   publish = "public"
-  command = """
-    curl -LJO https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION:-1.80.7}/dart-sass-${DART_SASS_VERSION:-1.80.7}-linux-x64.tar.gz && \
-    tar -xf dart-sass-${DART_SASS_VERSION:-1.80.7}-linux-x64.tar.gz && \
-    rm dart-sass-${DART_SASS_VERSION:-1.80.7}-linux-x64.tar.gz && \
-    export PATH=/opt/build/repo/dart-sass:$PATH && \
-    hugo --gc --minify
-  """
+  command = "hugo --gc --minify"
 
 [build.environment]
   HUGO_VERSION = "0.136.5"   # Specify the Hugo version you're using
   NODE_VERSION = "22.11.0"   # Ensure Netlify uses a compatible Node.js version (or whatever is needed for Dart Sass)
-  DART_SASS_VERSION = "1.80.5"  # Specify the Dart Sass version
 
 [context.production.environment]
   HUGO_ENV = "production"
