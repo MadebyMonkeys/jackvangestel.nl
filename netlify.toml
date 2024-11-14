@@ -10,15 +10,13 @@
 
 [build.environment]
   HUGO_VERSION = "0.136.5"   # Specify the Hugo version you're using
+  HUGO_EXTENDED = "true"   # If you need Hugo extended version (for SASS/SCSS support)
   NODE_VERSION = "22.11.0"   # Ensure Netlify uses a compatible Node.js version (or whatever is needed for Dart Sass)
   DART_SASS_VERSION = "1.80.7"  # Specify the Dart Sass version
 
 [context.production.environment]
   HUGO_ENV = "production"
 
-# If you need Hugo extended version (for SASS/SCSS support)
-# [build.environment]
-#   HUGO_EXTENDED = "true"
 
 # Cache npm dependencies between builds for faster builds
 # [[plugins]]
