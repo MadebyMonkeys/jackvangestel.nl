@@ -21,21 +21,18 @@ collections:
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "logo", label: "Logo", widget: "image" }
-      - name: "socialmedia"
-        label: "Socialmedia settings"
-        file: "data/shared/socials.yml"
+      - name: "socials"
+        label: "Social Media Links"
+        file: "data/home/socials.yml"
         fields:
           - name: "socials"
             label: "Social Media Links"
             widget: "list"
-            field:
-              name: "item"
-              label: "Platform"
-              widget: "object"
-              fields:
-                - { name: "platform", label: "Platform", widget: "string" }
-                - { name: "url", label: "URL", widget: "string" }
-                - { name: "handle", label: "Handle", widget: "string" }
+            fields: [
+              { name: "platform", label: "Platform", widget: "string" },
+              { name: "url", label: "URL", widget: "string" },
+              { name: "handle", label: "Handle", widget: "string" }
+            ]
 
 
   - name: "home"
