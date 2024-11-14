@@ -104,7 +104,7 @@ collections:
         file: "data/home/gallery.yml"
         fields:
           - { name: "title", label: "Title", widget: "string" }
-          - { name: "description", label: "Description", widget: "string" }
+          - { name: "description", label: "Beschrijving", widget: "string" }
           - name: "images"
             label: "Images"
             widget: "list"
@@ -124,14 +124,14 @@ collections:
         file: "content/about/_index.md"
         create: false
         fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Beschrijving", widget: "text" }
           - label: "SEO"
             name: "meta"
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-          - { name: "title", label: "Title", widget: "string" }
-          - { name: "description", label: "description", widget: "text" }
+              - { label: "Beschrijving", name: "description", widget: "text" }
           - { name: "body", label: "Content", widget: "markdown" }
           - { name: "image", label: "Image", widget: "image" }
 
@@ -139,14 +139,14 @@ collections:
         label: "Gallery Section"
         file: "data/about/gallery.yml"
         fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "description", label: "Beschrijving", widget: "string" }
           - label: "SEO"
             name: "meta"
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-          - { name: "title", label: "Title", widget: "string" }
-          - { name: "description", label: "Description", widget: "string" }
+              - { label: "Beschrijving", name: "description", widget: "text" }
           - name: "images"
             label: "Images"
             widget: "list"
@@ -168,13 +168,13 @@ collections:
         create: false
         fields:
           - { name: "title", label: "Title", widget: "string" }
-          - { name: "description", label: "description", widget: "string" }
+          - { name: "description", label: "Beschrijving", widget: "string" }
           - label: "SEO"
             name: "meta"
             widget: "object"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Beschrijving", name: "description", widget: "text" }
 
 
   - name: "contact"
@@ -188,14 +188,14 @@ collections:
         file: "content/contact/_index.md"
         create: false
         fields:
+          - { name: "title", label: "Titel", widget: "string" }
+          - { name: "body", label: "Content", widget: "markdown" }
           - label: "SEO"
             name: "meta"
             widget: "object"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-          - { name: "title", label: "Title", widget: "string" }
-          - { name: "body", label: "Content", widget: "markdown" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Beschrijving", name: "description", widget: "text" }
 
   - name: "booking"
     label: "Boekingen page"
@@ -208,14 +208,14 @@ collections:
         file: "content/booking/_index.md"
         create: false
         fields:
+          - { name: "title", label: "Titel", widget: "string" }
+          - { name: "body", label: "Content", widget: "markdown" }
           - label: "SEO"
             name: "meta"
             widget: "object"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-          - { name: "title", label: "Title", widget: "string" }
-          - { name: "body", label: "Content", widget: "markdown" }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Beschrijving", name: "description", widget: "text" }
 
 
 
@@ -233,15 +233,15 @@ collections:
     filter: { field: "visible", value: true }
     fields:
       - {label: "Visible", name: "visible", widget: hidden, default: true}
+      - { name: "title", label: "Titel", widget: "string" }
+      - { name: "description", label: "Beschrijving", widget: "text" }
       - label: "SEO"
         name: "meta"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-      - { name: "title", label: "Title", widget: "string" }
+          - { label: "Beschrijving", name: "description", widget: "text" }
       - { name: "date", label: "Datum", widget: "datetime", date_format: "DD.MM.YYYY" }
-      - { name: "description", label: "Beschrijving", widget: "text" }
       - { name: "cover_image", label: "Cover image", widget: "image",  }
       - {
           name: "images",
