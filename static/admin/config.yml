@@ -40,16 +40,14 @@ collections:
     editor:
       preview: false
     files:
-      - name: "meta"
-        label: "Seo settings"
+      - name: "homepage"
+        label: "Pagina settings"
         file: "content/_index.md"
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "Description"
-            name: "description"
-            widget: "text"
+          - { name: "title", label: "Page Title", widget: "string" }
+          - { name: "description", label: "Page Description", widget: "text" }
+          - { name: "meta_title", label: "SEO Title", widget: "string" }
+          - { name: "meta_description", label: "SEO Description", widget: "text" }
 
       - name: "hero"
         label: "Hero Section"
