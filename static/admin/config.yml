@@ -114,6 +114,8 @@ collections:
             - { name: "name", label: "Name", widget: "sting" }
             - { name: "url", label: "Url", widget: "image" }
 
+
+
   - name: "about"
     label: "About page"
     editor:
@@ -142,12 +144,6 @@ collections:
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "description", label: "Beschrijving", widget: "string" }
-          - label: "SEO"
-            name: "meta"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "text" }
           - name: "images"
             label: "Images"
             widget: "list"
