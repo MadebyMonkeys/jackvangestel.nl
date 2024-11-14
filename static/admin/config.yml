@@ -23,7 +23,7 @@ collections:
           - { name: "logo", label: "Logo", widget: "image" }
       - name: "socials"
         label: "Social Media Links"
-        file: "data/home/socials.yml"
+        file: "data/shared/socials.yml"
         fields:
           - name: "socials"
             label: "Social Media Links"
