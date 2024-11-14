@@ -1,17 +1,14 @@
 # Social links
 list:
-  - platform_details:
-      platform: "facebook"
+    - platform: "facebook"
       icon: "facebook"
       url: "https://facebook.com/groups/1662639874283648"
       handle: "Jack van Gestel Fan pagina"
-  - platform_details:
-      platform: "instagram"
+    - platform: "instagram"
       icon: "instagram"
       url: "https://instagram.com/jack.vangestel"
       handle: "@jack.vangestel"
-  - platform_details:
-      platform: "tiktok"
+    - platform: "tiktok"
       icon: "tiktok"
       url: "https://tiktok.com/@jack.van.gestel3"
       handle: "@jack.van.gestel3"
