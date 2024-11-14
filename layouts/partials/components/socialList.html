@@ -1,5 +1,5 @@
 <ul class="social__list flow" role="list">
-    {{ range .Site.Params.socials }}
+    {{ range .Site.Params.socials.list }}
     <li>
         <a href="{{ .url }}/{{ .handle }}">
             <ion-icon name="logo-{{ .platform }}"></ion-icon>

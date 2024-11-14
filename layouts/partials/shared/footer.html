@@ -3,7 +3,7 @@
         <p>&copy; Copyright 2024 {{ .Site.Title }}</p>
 
         <div class="social-links flex-group">
-            {{ range .Site.Params.socials }}
+            {{ range .Site.Params.socials.list }}
             <a href="{{ .url }}/{{ .handle }}">
                 <ion-icon size="large" name="logo-{{ .platform }}"></ion-icon>
             </a>
