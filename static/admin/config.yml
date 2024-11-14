@@ -28,11 +28,10 @@ collections:
           - name: "socials"
             label: "Social Media Links"
             widget: "list"
-            fields: [
-              { name: "icon", label: "Platform", widget: "string" },
-              { name: "url", label: "URL", widget: "string" },
-              { name: "handle", label: "Handle", widget: "string" }
-            ]
+            fields:
+              - { name: "icon", label: "Platform", widget: "string" }
+              - { name: "url", label: "URL", widget: "string" }
+              - { name: "handle", label: "Handle", widget: "string" }
 
 
   - name: "home"
@@ -220,7 +219,7 @@ collections:
 
 
   - name: "galleries"
-    label: "Galleries"
+    label: "Gallerij Albums"
     folder: "content/gallery"
     create: true
     editor:
