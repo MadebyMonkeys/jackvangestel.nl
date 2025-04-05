@@ -4,7 +4,9 @@ description: Contact description
 image: ""
 meta:
   title: Deze title is voor SEO doeleinde
-  description: Beschrijving van de pagina
+  description: |-
+    Heeft u vragen of opmerkingen?
+    Laat het ons weten.
 ---
 Heeft u vragen of opmerkingen?\
 Laat het ons weten.
