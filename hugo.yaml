@@ -1,18 +1,20 @@
-baseURL: "https://jackvangestel.nl/"
-languageCode: "nl"
-title: Jack van Gestel
-logo: ""
-
-enableRobotTXT: true
-pagerSize: 10
-summarylength: 0
 enableEmoji: true
-
-# googleAnalytics: "G-XXXXXXXXXX"
-
-imaging:
-  anchor: "Center"
-
+pagerSize: 10
+languageCode: nl
+params:
+  menus:
+    main:
+      - title: Home
+        url: /
+      - title: Biography
+        url: /about
+      - title: Gallery
+        url: /gallery
+      - title: Contact
+        url: /contact
+      - title: Boek nu
+        button: true
+        url: /booking
 markup:
   goldmark:
     parser:
@@ -20,19 +22,10 @@ markup:
       attribute:
         block: true
         title: true
-
-params:
-  # Menu
-  menus:
-    main:
-      - title: "Home"
-        url: "/"
-      - title: "Biography"
-        url: "/about"
-      - title: "Gallery"
-        url: "/gallery"
-      - title: Contact
-        url: "/contact"
-      - title: Boek nu
-        button: true
-        url: "/booking"
+enableRobotTXT: true
+logo: /media/video-het-werd-zomer.webp
+summarylength: 0
+title: Jack van Gestel
+imaging:
+  anchor: Center
+baseURL: https://jackvangestel.nl/
