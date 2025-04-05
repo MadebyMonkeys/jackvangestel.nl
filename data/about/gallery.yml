@@ -1,13 +1,16 @@
 enabled: true
-id: "Fotos"
+id: Fotos
 max_amount: 6
-
-title: "Foto's"
-description: "Profiel fotos"
+title: Foto's
+description: Profiel fotos
 images:
   - name: Image name
-    url: "/media/about-img.png"
+    url: /media/about-img.png
   - name: Image name
-    url: "/media/about-img2.png"
+    url: /media/about-img2.png
   - name: Image name
-    url: "/media/about-img.png"
+    url: /media/about-img.png
+  - url: /media/img_0736.jpeg
+    name: Tilburg Trappers optreden april 2025
+  - url: /media/mpf-voorprogramma-borger.jpeg
+    name: Voorprogramma MPF te Borger 2025. Met dank aan RadioNL
