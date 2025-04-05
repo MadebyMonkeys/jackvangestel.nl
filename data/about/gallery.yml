@@ -1,7 +1,7 @@
 enabled: true
 id: Fotos
 max_amount: 6
-title: Foto's
+title: Foto's.
 description: Foto’s optredens
 images:
   - name: Image name
