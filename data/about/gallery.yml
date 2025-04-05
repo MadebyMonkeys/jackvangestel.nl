@@ -2,7 +2,7 @@ enabled: true
 id: Fotos
 max_amount: 6
 title: Foto's
-description: Profiel fotos
+description: Foto’s optredens
 images:
   - name: Image name
     url: /media/about-img.png
