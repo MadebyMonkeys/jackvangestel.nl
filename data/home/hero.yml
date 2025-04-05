@@ -1,9 +1,8 @@
 enabled: true
-id: "hero"
-
-intro: "Nieuwe video"
-title: "Terug naar de kust"
-video_id: "WbjrODL81ok"
+id: hero
+intro: Mijn nieuwe single komt binnenkort uit! We houden u op de hoogte.
+title: Terug naar de kust
 image:
-  url: "/media/about-img2.png"
-  alt: "Hero image"
+  url: /media/about-img2.png
+  alt: Hero image
+video_id: WbjrODL81ok
