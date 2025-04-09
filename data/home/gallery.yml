@@ -1,16 +1,29 @@
 enabled: true
-id: "Gallery"
+id: Gallery
 max_amount: 9
-
-title: "Gallery"
-description: "Een kleine selectie uit onze albums"
+title: Gallery
+description: Een kleine selectie uit onze albums
 link:
   title: Bekijk volledige gallerij
-  url: "gallery"
+  url: gallery
 images:
   - name: Image name
-    url: "/media/about-img.png"
+    url: /media/about-img.png
   - name: Image name
-    url: "/media/about-img2.png"
+    url: /media/about-img2.png
   - name: Image name
-    url: "/media/about-img.png"
+    url: /media/about-img.png
+  - url: /media/img_0679.jpeg
+    name: Mpf
+  - url: /media/img_0677.jpeg
+    name: Mpf
+  - url: /media/img_0658.jpeg
+    name: Mpf
+  - name: Mpf
+    url: /media/img_0666.jpeg
+  - name: Mpf
+    url: /media/img_0671.jpeg
+  - name: Mpf
+    url: /media/img_0639.jpeg
+  - url: /media/pleasemamapleasealbumhoesdef.jpg
+    name: please mama please albumhoes

@@ -1,10 +1,13 @@
 enabled: true
-id: "About"
-
+id: About
 intro: Over Jack van gestel
 title: Leer mij kennen
-body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci delectus placeat harum illum tempora repellendus dolorem cumque dignissimos numquam!
+body: |-
+  Jack van gestel is een zanger afkomstig uit het Brabantse \
+  Oisterwijk en presenteerde zijn debuutsingle in 2024. \
+  Jack staat al 40 jaar op de bühne en heeft al op vele podia \
+  gestaan maar van een eigen single was het nog nooit gekomen.
+image: /media/about-img.png
 link:
   title: Lees verder
-  url: "about"
-image: "/media/about-img.png"
+  url: about
