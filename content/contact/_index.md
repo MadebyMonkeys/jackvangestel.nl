@@ -8,4 +8,4 @@ meta:
   description: Beschrijving van de pagina
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae labore similique rem voluptate vitae, iste possimus dolore nam sint quod.
+Wil je Jack van Gestel boeken voor een optreden, heb je een vraag, of wil je gewoon een berichtje sturen? Neem gerust contact op via onderstaand formulier of stuur een e-mail. Jack of zijn team reageert zo snel mogelijk.
