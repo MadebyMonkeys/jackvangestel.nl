@@ -1,5 +1,5 @@
 ---
-title: Contact & Perskit
+title: Kom in contact
 description: Contact description
 image: ""
 meta:
