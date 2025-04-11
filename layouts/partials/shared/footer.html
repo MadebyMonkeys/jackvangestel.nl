@@ -15,12 +15,5 @@
 {{ $lightboxJS := resources.Get "js/fslightbox.js" | resources.Copy "js/fslightbox.js" }}
 <script defer src="{{ $lightboxJS.Permalink }}"></script>
 
-<script>
-    document.querySelector('.button').addEventListener('click', function() {
-        // Hiermee wordt de lightbox geopend voor de video
-        fslightbox.open();
-    });
-</script>
-
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
