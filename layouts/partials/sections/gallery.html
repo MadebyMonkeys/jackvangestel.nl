@@ -12,15 +12,15 @@
         {{ end }}
         {{ range $limitedImages }}
             <div class="album__image">
-                <a href="{{ .url }}" data-lightbox="gallery">
-                    <img src="{{ .url }}" alt="{{ .name }}">
+                <a href="{{ .image }}" data-fslightbox="gallery">
+                    <img src="{{ .image }}" alt="{{ .name }}">
                 </a>
             </div>
         {{ end }}
     </div>
     {{ with .link }}
     <div class="text-center">
-        <a href="{{.url}}" class="button" data-button="ghost">{{.title}}</a>
+        <a href="{{ .url }}" class="button" data-button="ghost">{{.title}}</a>
     </div>
     {{ end }}
 </section>

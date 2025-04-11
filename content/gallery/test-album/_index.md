@@ -7,5 +7,11 @@ meta:
   description: Beschrijving van de pagina
 date: 2024-12-29
 cover_image: img_0640.jpeg
-images: img_0660.jpeg
+images:
+  - title: "image 01"
+    image: "img_0660.jpeg"
+  - title: "image 02"
+    image: "img_0640.jpeg"
+  - title: "image 01"
+    image: "img_0643.jpeg"
 ---

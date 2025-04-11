@@ -4,15 +4,11 @@
     <p>{{ .Params.description }}</p>
 
     <div class="album__list grid" data-rows="masonry">
-        {{ $images := .Resources.ByType "image" }}
-        {{ range $images }}
-          <div class="album__image">
-            {{ $thumbnail := .Resize "600x" }} <!-- Creates a 300x200 px thumbnail -->
-            <a href="{{ .RelPermalink }}" data-lightbox="gallery">
-              <img src="{{ $thumbnail.RelPermalink }}" alt="{{ .Name }}">
-            </a>
-          </div>
-        {{ end }}
+      {{ range .images }}
+      <a class="album__image" href="{{ .image }}" data-fslightbox="gallery">
+          <img src="{{ .image }}" alt="{{ .title }}">
+      </a>
+      {{ end }}
     </div>
   </section>
 {{ end }}

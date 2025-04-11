@@ -8,6 +8,10 @@ meta:
 date: 2024-10-29
 cover_image: image1.png
 images:
-  - img_0712.jpeg
-  - /gallery/terug-naar-de-kust/image2.png
+  - title: "image 01"
+    image: "image1.png"
+  - title: "image 01"
+    image: "image2.png"
+  - title: "image 01"
+    image: "img_0712.jpeg"
 ---

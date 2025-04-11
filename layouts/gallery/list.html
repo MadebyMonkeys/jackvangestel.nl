@@ -6,7 +6,7 @@
         {{ range .Pages }}
         <article class="album-card">
             <a href="{{ .Permalink }}">
-            <img class="album__image" src="{{ .RelPermalink }}{{ .Params.cover_image }}" alt="{{ .Title }}">
+            <img loading="lazy" class="album__image" src="{{ .RelPermalink }}{{ .Params.cover_image }}" alt="{{ .Title }}">
             <span>
                 <h4>{{ .Title }}</h4>
                 {{ $images := .Resources.Match "*.{jpg,jpeg,png,gif}" }}

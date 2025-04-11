@@ -114,7 +114,7 @@ collections:
             required: true
             fields:
             - { name: "name", label: "Name", widget: "string" }
-            - { name: "url", label: "Url", widget: "image" }
+            - { name: "image", label: "Image", widget: "image" }
 
 
 
@@ -152,7 +152,7 @@ collections:
             required: true
             fields:
             - { name: "name", label: "Name", widget: "string" }
-            - { name: "url", label: "Url", widget: "image" }
+            - { name: "image", label: "Image", widget: "image" }
 
 
 
@@ -274,11 +274,11 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Beschrijving", name: "description", widget: "text" }
-      - { name: "date", label: "Datum", widget: "datetime", date_format: "DD.MM.YYYY" }
+      - { name: "date", label: "Datum", widget: "datetime", date_format: "DD.MMMM.YYYY" }
       - { name: "cover_image", label: "Cover image", widget: "image",  }
-      - {
-          name: "images",
-          label: "Album Images",
-          widget: "image",
-          required: true,
-        }
+      - name: "images"
+        label: "Album Images"
+        widget: "list"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "image", label: "Image", widget: "image" }
