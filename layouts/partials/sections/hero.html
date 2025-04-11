@@ -11,10 +11,10 @@
             <img src="{{ .url }}" alt="{{ .alt }}">
             {{ end }}
             <span>
-                <button class="button" href="https://www.youtube.com/watch?v={{.video_id}}" data-lightbox>
+                <a class="button" href="https://www.youtube.com/watch?v={{.video_id}}" data-fslightbox-type="video" data-fslightbox>
                     <span class="visually-hidden">Play video</span>
                     <ion-icon name="play" size="large"></ion-icon>
-                </button>
+                </a>
             </span>
         </div>
     </div>
