@@ -4,7 +4,7 @@
     <p>{{ .Params.description }}</p>
 
     <div class="album__list grid" data-rows="masonry">
-      {{ range .images }}
+      {{ range .Params.images }}
       <a class="album__image" href="{{ .image }}" data-fslightbox="gallery">
           <img src="{{ .image }}" alt="{{ .title }}">
       </a>

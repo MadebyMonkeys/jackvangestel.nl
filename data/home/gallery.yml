@@ -7,23 +7,23 @@ link:
   title: Bekijk volledige gallerij
   url: gallery
 images:
-  - name: Image name
-    url: /media/about-img.png
-  - name: Image name
-    url: /media/about-img2.png
-  - name: Image name
-    url: /media/about-img.png
-  - url: /media/img_0679.jpeg
-    name: Mpf
-  - url: /media/img_0677.jpeg
-    name: Mpf
-  - url: /media/img_0658.jpeg
-    name: Mpf
-  - name: Mpf
-    url: /media/img_0666.jpeg
-  - name: Mpf
-    url: /media/img_0671.jpeg
-  - name: Mpf
-    url: /media/img_0639.jpeg
-  - url: /media/pleasemamapleasealbumhoesdef.jpg
-    name: please mama please albumhoes
+  - name: Image 01
+    image: /media/about-img.png
+  - name: Image 02
+    image: /media/about-img2.png
+  - name: Image 03
+    image: /media/about-img.png
+  - name: Image 04
+    image: /media/img_0679.jpeg
+  - name: Image 05
+    image: /media/img_0677.jpeg
+  - name: Image 06
+    image: /media/img_0658.jpeg
+  - name: Image 07
+    image: /media/img_0666.jpeg
+  - name: Image 08
+    image: /media/img_0671.jpeg
+  - name: Image 09
+    image: /media/img_0639.jpeg
+  - name: please mama please albumhoes
+    image: /media/pleasemamapleasealbumhoesdef.jpg
