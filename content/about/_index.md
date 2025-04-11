@@ -4,7 +4,7 @@ description: Over jack van gestel
 meta:
   description: Jack van gestel is een zanger uit Oisterwijk
   title: Jack van gestel biografie
-image: /media/about-img2.png
+image: /media/img_0712.jpeg
 ---
 Jack van gestel is een zanger afkomstig uit het Brabantse \
 Oisterwijk en presenteerde zijn debuutsingle in 2024. \
