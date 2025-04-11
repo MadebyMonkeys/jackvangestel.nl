@@ -4,17 +4,13 @@ max_amount: 9
 title: Gallery
 description: Een kleine selectie uit onze albums
 link:
-  title: Bekijk volledige gallerij
+  title: Bekijk alle albums
   url: gallery
 images:
   - name: Image 01
     image: /media/about-img.png
   - name: Image 02
     image: /media/about-img2.png
-  - name: Image 03
-    image: /media/about-img.png
-  - name: Image 04
-    image: /media/img_0679.jpeg
   - name: Image 05
     image: /media/img_0677.jpeg
   - name: Image 06
@@ -25,5 +21,3 @@ images:
     image: /media/img_0671.jpeg
   - name: Image 09
     image: /media/img_0639.jpeg
-  - name: please mama please albumhoes
-    image: /media/pleasemamapleasealbumhoesdef.jpg
