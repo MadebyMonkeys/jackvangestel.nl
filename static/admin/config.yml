@@ -274,7 +274,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Beschrijving", name: "description", widget: "text" }
-      - { name: "date", label: "Datum", widget: "datetime", date_format: "DD.MMMM.YYYY" }
+      - { name: "date", label: "Datum", widget: "datetime", date_format: "DD MMMM YYYY" }
       - { name: "cover_image", label: "Cover image", widget: "image",  }
       - name: "images"
         label: "Album Images"
