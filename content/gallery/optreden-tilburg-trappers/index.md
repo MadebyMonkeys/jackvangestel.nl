@@ -7,7 +7,7 @@ description: |-
 meta:
   title: Tilburg Trappers
   description: Tilburg Trappers
-date: 12 April 2025
+date: 2025-04-12
 cover_image: img_0724.jpeg
 images:
   - image: img_0722.jpeg
