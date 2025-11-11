@@ -1,4 +1,4 @@
-name: Deploy Hugo site to cPanel
+name: Deploy Hugo site to Host
 
 on:
   push:
@@ -46,7 +46,7 @@ jobs:
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p 4000 -H $HOST_HOST >> ~/.ssh/known_hosts
+          ssh-keyscan -p $HOST_POORT -H $HOST_HOST >> ~/.ssh/known_hosts
 
           # Test verbinding met SSH
           ssh -p $HOST_POORT -v $HOST_USER@$HOST_HOST "echo ✅ Verbonden!"
