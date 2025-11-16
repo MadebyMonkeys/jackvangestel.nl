@@ -54,3 +54,19 @@ content:
         fields:
           - { name: "type", label: "Type", widget: "select", options: ["album", "track", "artist"] }
           - { name: "id", label: "ID", widget: "string" }
+
+  - name: "about"
+    label: "About Section"
+    path: "data/home/about.yml"
+    type: file
+    fields:
+      - { name: "intro", label: "Intro", widget: "string" }
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "body", label: "Body", widget: "markdown" }
+      - { name: "image", label: "Image", widget: "image" }
+      - name: "link"
+        label: "Link"
+        widget: "object"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "url", label: "Page", widget: "string" }
