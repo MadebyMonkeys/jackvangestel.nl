@@ -102,3 +102,45 @@ content:
           - { label: "Beschrijving", name: "description", widget: "text" }
       - { name: "body", label: "Content", widget: "markdown" }
       - { name: "image", label: "Image", widget: "image" }
+
+
+
+  - name: "gallery"
+    label: "Gallery Section"
+    path: "content/gallery/_index.md"
+    type: file
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "description", label: "Beschrijving", widget: "string" }
+      - label: "SEO"
+        name: "meta"
+        widget: "object"
+        fields:
+          - { label: "Titel", name: "title", widget: "string" }
+          - { label: "Beschrijving", name: "description", widget: "text" }
+
+
+  - name: "video_list"
+    label: "Video Section"
+    path: "data/shared/videos.yml"
+    type: file
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+      - name: "description"
+        label: "Description"
+        widget: "text"
+      - name: "video_list"
+        label: "Video List"
+        widget: "list"
+        fields:
+          - name: "title"
+            label: "Video Title"
+            widget: "string"
+          - name: "video_id"
+            label: "Video ID"
+            widget: "string"
+          - name: "image"
+            label: "Image"
+            widget: "image"
