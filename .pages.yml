@@ -39,3 +39,18 @@ content:
           - { name: "url", label: "URL", widget: "image" }
           - { name: "alt", label: "Alt Text", widget: "string" }
       - { name: "video_id", label: "Video id", widget: "string" }
+
+
+  - name: "spotify"
+    label: "Spotify Section"
+    path: "data/home/spotify.yml"
+    type: file
+    fields:
+      - { name: "intro", label: "Intro", widget: "string" }
+      - { name: "title", label: "Title", widget: "string" }
+      - name: "spotify"
+        label: "Spotify"
+        widget: "object"
+        fields:
+          - { name: "type", label: "Type", widget: "select", options: ["album", "track", "artist"] }
+          - { name: "id", label: "ID", widget: "string" }
