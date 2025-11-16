@@ -50,7 +50,7 @@ content:
       - { name: "title", label: "Title", widget: "string" }
       - name: "spotify"
         label: "Spotify"
-        widget: "object"
+        type: "object"
         fields:
           - { name: "type", label: "Type", widget: "select", options: ["album", "track", "artist"] }
           - { name: "id", label: "ID", widget: "string" }
@@ -66,7 +66,7 @@ content:
       - { name: "image", label: "Image", widget: "image" }
       - name: "link"
         label: "Link"
-        widget: "object"
+        type: "object"
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "url", label: "Page", widget: "string" }
@@ -80,7 +80,7 @@ content:
       - { name: "description", label: "Beschrijving", widget: "string" }
       - name: "images"
         label: "Images"
-        widget: "list"
+        type: "object"
         required: true
         fields:
         - { name: "name", label: "Name", widget: "string" }
