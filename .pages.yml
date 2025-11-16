@@ -1,6 +1,6 @@
 media:
-  input: _src/static/media
-  output: media
+  input: "static/media"
+  output: "media"
 content:
   - name: "settings"
     label: "Website Settings"
