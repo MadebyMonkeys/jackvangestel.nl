@@ -133,7 +133,7 @@ content:
         widget: "text"
       - name: "video_list"
         label: "Video List"
-        widget: "list"
+        type: "object"
         fields:
           - name: "title"
             label: "Video Title"
