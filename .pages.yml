@@ -10,7 +10,6 @@ content:
       - { name: "name", label: "Naam", type: "string" }
       - { name: "logo", label: "Logo", type: "image" }
 
-
   - name: "homepage"
     label: "Home page"
     path: "content/_index.md"
@@ -26,16 +25,16 @@ content:
           - { name: "title", label: "Title", type: "string" }
           - { name: "description", label: "Description", type: "string" }
 
-      - name: "hero"
-        label: "Hero Section"
-        file: "data/home/hero.yml"
+  - name: "hero"
+    label: "Hero Section"
+    file: "data/home/hero.yml"
+    fields:
+      - { name: "intro", label: "Intro", widget: "string" }
+      - { name: "title", label: "Title", widget: "string" }
+      - name: "image"
+        label: "Image"
+        widget: "object"
         fields:
-          - { name: "intro", label: "Intro", widget: "string" }
-          - { name: "title", label: "Title", widget: "string" }
-          - name: "image"
-            label: "Image"
-            widget: "object"
-            fields:
-              - { name: "url", label: "URL", widget: "image" }
-              - { name: "alt", label: "Alt Text", widget: "string" }
-          - { name: "video_id", label: "Video id", widget: "string" }
+          - { name: "url", label: "URL", widget: "image" }
+          - { name: "alt", label: "Alt Text", widget: "string" }
+       { name: "video_id", label: "Video id", widget: "string" }
