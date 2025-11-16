@@ -27,7 +27,8 @@ content:
 
   - name: "hero"
     label: "Hero Section"
-    file: "data/home/hero.yml"
+    path: "data/home/hero.yml"
+    type: file
     fields:
       - { name: "intro", label: "Intro", widget: "string" }
       - { name: "title", label: "Title", widget: "string" }
@@ -37,4 +38,4 @@ content:
         fields:
           - { name: "url", label: "URL", widget: "image" }
           - { name: "alt", label: "Alt Text", widget: "string" }
-       { name: "video_id", label: "Video id", widget: "string" }
+      - { name: "video_id", label: "Video id", widget: "string" }
