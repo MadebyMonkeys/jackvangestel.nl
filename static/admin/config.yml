@@ -2,7 +2,8 @@
 # local_backend: true
 
 backend:
-  name: git-gateway
+  name: github
+  repo: MadebyMonkeys/jackvangestel.nl
   branch: main
 
 media_folder: "static/media"
