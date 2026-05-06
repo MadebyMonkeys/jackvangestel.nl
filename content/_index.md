@@ -1,6 +1,8 @@
 ---
 title: Homepage
-description: Home page description
+description: Jack van Gestel is een Nederlandstalige zanger met gevoelige
+  ballads en energieke meezingers. Boek hem voor feesten, bruiloften en
+  evenementen.
 meta:
   title: Jack van gestel
   description: |-
